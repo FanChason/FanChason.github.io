@@ -1,205 +1,192 @@
+<!DOCTYPE html><html lang="zh-tw" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fan Chason's Blog - 不积跬步，无以致千里；不积小流，无以成江海</title><meta name="author" content="Fan Chason"><meta name="copyright" content="Fan Chason"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Fan Chason的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fan Chason&#39;s Blog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Fan Chason&#39;s Blog">
+<meta property="og:description" content="Fan Chason的个人博客">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/null">
+<meta property="article:author" content="Fan Chason">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
 
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
 
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
 
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#FFF">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
 
-<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2020-12-23 16:37:18'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-
-<link rel="alternate" type="application/rss+xml" title="Fan Chason's Blog" href="http://example.com/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="Fan Chason's Blog" href="http://example.com/atom.xml" />
-<link rel="alternate" type="application/json" title="Fan Chason's Blog" href="http://example.com/feed.json" />
-
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
-
-  
-
-<link rel="canonical" href="http://example.com/">
-
-
-
-  <title>Yume Shoka = Fan Chason's Blog = 不积跬步，无以致千里；不积小流，无以成江海</title>
-<meta name="generator" content="Hexo 5.3.0"></head>
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div id="loading">
-    <div class="cat">
-      <div class="body"></div>
-      <div class="head">
-        <div class="face"></div>
-      </div>
-      <div class="foot">
-        <div class="tummy-end"></div>
-        <div class="bottom"></div>
-        <div class="legs left"></div>
-        <div class="legs right"></div>
-      </div>
-      <div class="paw">
-        <div class="hands left"></div>
-        <div class="hands right"></div>
-      </div>
-    </div>
-  </div>
-  <div id="container">
-    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="inner">
-        <div id="brand">
-          <div class="pjax">
-          
-            <a href="/" class="logo" rel="start"><p class="artboard">Yume Shoka</p>
-              <h1 itemprop="name headline" class="title">Fan Chason's Blog</h1>
-            </a>
-            <p class="meta" itemprop="description">= 不积跬步，无以致千里；不积小流，无以成江海 =</p>
-          
-          </div>
-        </div>
-        <nav id="nav">
-  <div class="inner">
-    <div class="toggle">
-      <div class="lines" aria-label="Toggle navigation bar">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
-    </div>
-    <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
-    </ul>
-    <ul class="right">
-      <li class="item theme">
-        <i class="ic i-sun"></i>
-      </li>
-      <li class="item search">
-        <i class="ic i-search"></i>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-      </div>
-      <div id="imgs" class="pjax">
-        <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
-        </ul>
-      </div>
-    </header>
-    <div id="waves">
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave" x="48" y="0" />
-          <use xlink:href="#gentle-wave" x="48" y="3" />
-          <use xlink:href="#gentle-wave" x="48" y="5" />
-          <use xlink:href="#gentle-wave" x="48" y="7" />
-        </g>
-      </svg>
-    </div>
-    <main>
-      <div class="inner">
-        <div id="main" class="pjax">
-          
-  <div class="index wrap">
-    <h2 class="divider">Post List</h2>
-    <div class="segments posts">
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2020/12/18/hello-world/" itemprop="url" title="Hello World"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2020-12-18 07:09:20">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2020-12-18T07:09:20+08:00">2020-12-18</time>
-  </span>
-</div>
-
-    <h3><a href="/2020/12/18/hello-world/" itemprop="url" title="Hello World">Hello World</a></h3>
-    <div class="excerpt">
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &amp;quot;My New Post&amp;quot;
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="Fan Chason's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Fan Chason's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Fan Chason's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/12/18/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-12-17T23:09:20.949Z" title="Created 2020-12-18 07:09:20">2020-12-18</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 More info: Writing
-Run server1$...
-    </div>
-    <a href="/2020/12/18/hello-world/" itemprop="url" title="Hello World" class="btn">more...</a>
-  </div>
-</article>
-
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" itemprop="url" title="Viper架构探索实践（一）"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2019-10-17 19:35:00">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2019-10-17T19:35:00+08:00">2019-10-17</time>
-  </span>
-</div>
-
-    <h3><a href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" itemprop="url" title="Viper架构探索实践（一）">Viper架构探索实践（一）</a></h3>
-    <div class="excerpt">
-        Viper架构图
+Run server1$ hexo server
+More info: Server
+Generate static files1$ hexo generate
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+More info: Deployment
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" title="Viper架构探索实践（一）">Viper架构探索实践（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2019-10-17T11:35:00.000Z" title="Created 2019-10-17 19:35:00">2019-10-17</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/">作者：Fan Chason</a></span></div><div class="content">Viper架构图
 
 VIPER的主要部分简介
 View: (视图）： 显示Presenter告知的内容，并将用户输入中继回Presenter。
 Interactor: (交互器）：包含用例指定的业务逻辑。
 Presenter: (表示层，也可称主持人）：包含用于准备显示内容（如从Interactor接收的）和用于对用户输入做出反应（通过从Interactor请求新数据）的视图逻辑。
 Entity: (实体）：包含Interactor使用的基本模型对象。
-Routing:...
-    </div>
-    <div class="meta footer">
-      <span>
-        <a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" itemprop="url" title="作者：Fan Chason"><i class="ic i-flag"></i>作者：Fan Chason</a>
-      </span>
-    </div>
-    <a href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" itemprop="url" title="Viper架构探索实践（一）" class="btn">more...</a>
-  </div>
-</article>
+Routing: (路由）：包含用于描述按哪个顺序显示哪些屏幕的导航逻辑。
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" itemprop="url" title="使用fastlane实现iOS自动化打包上传fir.im和testflight"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giciszlczyj20zk0m816d.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2019-10-11 16:41:33">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2019-10-11T16:41:33+08:00">2019-10-11</time>
-  </span>
-</div>
 
-    <h3><a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" itemprop="url" title="使用fastlane实现iOS自动化打包上传fir.im和testflight">使用fastlane实现iOS自动化打包上传fir.im和testflight</a></h3>
-    <div class="excerpt">
-        前言日复一日重复打包工作，是在浪费宝贵的时间
+这种分离也符合单一责任原则。Interactor负责业务分析师Presenter代表交互设计师View负责视觉设计师
+
+相比MVX相比之前的MVX架构，VIPER多出了两个东西：Interactor（交互器）和Router（路由）。
+各部分职责如下：
+123456789101112131415161718192021222324- View提供完整的视图，负责视图的组合、布局、更新向Presenter提供更新视图的接口将View相关的事件发送给Present ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" title="使用fastlane实现iOS自动化打包上传fir.im和testflight">使用fastlane实现iOS自动化打包上传fir.im和testflight</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2019-10-11T08:41:33.000Z" title="Created 2019-10-11 16:41:33">2019-10-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/">作者：Fan Chason</a></span></div><div class="content">前言日复一日重复打包工作，是在浪费宝贵的时间
 自动化打包工具应运而生，是我们解放双手的利器
 fastlane官方文档
 github地址
@@ -211,295 +198,72 @@ fastlane官方推荐的xcode-select --install 安装时最后结果是不能安�
 sudo gem install -n /usr/local/bin fastlane
 其他的安装方法：（扩展，可跳过）
 
-第一种是通过...
-    </div>
-    <div class="meta footer">
-      <span>
-        <a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" itemprop="url" title="作者：Fan Chason"><i class="ic i-flag"></i>作者：Fan Chason</a>
-      </span>
-    </div>
-    <a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" itemprop="url" title="使用fastlane实现iOS自动化打包上传fir.im和testflight" class="btn">more...</a>
-  </div>
-</article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" itemprop="url" title="基于Hexo和Github搭建技术博客"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2019-09-26 14:40:33">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2019-09-26T14:40:33+08:00">2019-09-26</time>
-  </span>
-</div>
+第一种是通过 Homebrew 软件包管理器来进行安装，第二种就是我们最熟悉的方式，下载安装包来进行安装,第三种是通过 RubyGems 来进行，RubyGems 是一个方便的 Ruby 程序包管理器，可以将一个 Ruby 应用程序打包到一个 Gem 里，作为一个安装单元。 一个  Gem 就是一个封装起来的应用程序或代码库
 
-    <h3><a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" itemprop="url" title="基于Hexo和Github搭建技术博客">基于Hexo和Github搭建技术博客</a></h3>
-    <div class="excerpt">
-        <h2 id="准备"><a href="#准备" class="headerlink" title="准备:"></a>准备:</h2><p><code>nodejs</code>、<code>git</code>、<code>npm</code>、<code>hexo</code></p>
-<p>验证有没有敲命令，eg: <code>npm -v</code>，没有装先去装</p>
-<ul>
-<li><p>npm可通过homebrew安装</p>
-<p><code>brew install npm</code> </p>
-</li>
-<li><p>Hexo安装</p>
-<p><code>npm install hexo-cli -g</code></p>
-</li>
-</ul>
-<h2 id="开始搭建博客"><a href="#开始搭建博客" class="headerlink" title="开始搭建博客"></a>开始搭建博客</h2><ul>
-<li><p>本地创建一个存放博客文件夹</p>
-<p>eg: SkytechMobileBlog</p>
-</li>
-<li><p>切到<code>SkytechMobileBlog</code>目录下执行<code>初始化</code></p>
-<p><code>hexo init</code></p>
-</li>
-<li><p>然后安装依赖</p>
-<p><code>npm install</code></p>
-</li>
-<li><p>生成静态文件</p>
-<p><code>hexo g</code></p>
-</li>
-<li><p>创建服务</p>
-<p><code>hexo s</code></p>
-</li>
-<li><p>hexo常用命令：</p>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>hexo init</code></td>
-<td>初始化一个文件夹，它会为这个文件夹配置所有骨架</td>
-</tr>
-<tr>
-<td><code>hexo g</code></td>
-<td>即hexo generate，生成静态文件</td>
-</tr>
-<tr>
-<td><code>hexo s</code></td>
-<td>即hexo server，创建服务</td>
-</tr>
-<tr>
-<td><code>hexo d</code></td>
-<td>即hexo deploy,用于将本地文件发布到github上</td>
-</tr>
-<tr>
-<td><code>hexo n</code></td>
-<td>即hexo new,用于新建一篇文章</td>
-</tr>
-</tbody></table>
-<p>现在只是在本地搭建了一个技术博客，</p>
-<p>要想把博客内容让所有人都能看到，就得借助Github了，把博客内容部署到Github上去</p>
-</li>
-</ul>
-      
-    </div>
-    <div class="meta footer">
-      <span>
-        <a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" itemprop="url" title="作者：Fan Chason"><i class="ic i-flag"></i>作者：Fan Chason</a>
-      </span>
-    </div>
-    <a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" itemprop="url" title="基于Hexo和Github搭建技术博客" class="btn">more...</a>
-  </div>
-</article>
+配置环境变量添加用户环境变量 
+vim ~/.bash_profile
+添加
+123...exp ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" title="基于Hexo和Github搭建技术博客">基于Hexo和Github搭建技术博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2019-09-26T06:40:33.000Z" title="Created 2019-09-26 14:40:33">2019-09-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/">作者：Fan Chason</a></span></div><div class="content">准备:nodejs、git、npm、hexo
+验证有没有敲命令，eg: npm -v，没有装先去装
 
-    </div>
+npm可通过homebrew安装
+brew install npm 
 
-  </div>
+Hexo安装
+npm install hexo-cli -g
 
-  
+
+开始搭建博客
+本地创建一个存放博客文件夹
+eg: SkytechMobileBlog
+
+切到SkytechMobileBlog目录下执行初始化
+hexo init
+
+然后安装依赖
+npm install
+
+生成静态文件
+hexo g
+
+创建服务
+hexo s
+
+hexo常用命令：
 
 
 
-        </div>
-        <div id="sidebar">
-          
-<div class="inner">
-
-  <div class="panels">
-    <div class="inner">
-      <div class="contents panel pjax" data-title="Contents">
-      </div>
-      <div class="related panel pjax" data-title="Related">
-      </div>
-      <div class="overview panel" data-title="Overview">
-        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="image" itemprop="image" alt="Fan Chason"
-      data-src="/images/avatar.jpg">
-  <p class="name" itemprop="name">Fan Chason</p>
-  <div class="description" itemprop="description">Fan Chason的个人博客</div>
-</div>
-
-<nav class="state">
-    <div class="item posts">
-      <a href="/archives/">
-        <span class="count">4</span>
-        <span class="name">posts</span>
-      </a>
-    </div>
-    <div class="item categories">
-      <a href="/categories/">
-        <span class="count">1</span>
-        <span class="name">categories</span>
-      </a>
-    </div>
-    <div class="item tags">
-      <a href="/tags/">
-        <span class="count">3</span>
-        <span class="name">tags</span>
-      </a>
-    </div>
-</nav>
-
-<div class="social">
-      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
-      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
-      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
-      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
-      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
-      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
-</div>
-
-<ul class="menu">
-  
-    
-  <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
-  </li>
-
-
-</ul>
-
-      </div>
-    </div>
-  </div>
-
-  <ul id="quick">
-    <li class="prev pjax">
-    </li>
-    <li class="up"><i class="ic i-arrow-up"></i></li>
-    <li class="down"><i class="ic i-arrow-down"></i></li>
-    <li class="next pjax">
-    </li>
-    <li class="percent"></li>
-  </ul>
-</div>
-
-        </div>
-        <div class="dimmer"></div>
-      </div>
-    </main>
-    <footer id="footer">
-      <div class="inner">
-        <div class="widgets">
-          
-<div class="rpost pjax">
-  <h2>Random Posts</h2>
-  <ul>
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/12/18/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" title="In 作者：Fan Chason">作者：Fan Chason</a>
-</div>
-
-    <span><a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" title="使用fastlane实现iOS自动化打包上传fir.im和testflight">使用fastlane实现iOS自动化打包上传fir.im和testflight</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" title="In 作者：Fan Chason">作者：Fan Chason</a>
-</div>
-
-    <span><a href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" title="Viper架构探索实践（一）">Viper架构探索实践（一）</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" title="In 作者：Fan Chason">作者：Fan Chason</a>
-</div>
-
-    <span><a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" title="基于Hexo和Github搭建技术博客">基于Hexo和Github搭建技术博客</a></span>
-  </li>
-
-  </ul>
-</div>
-<div>
-  <h2>Recent Comments</h2>
-  <ul class="leancloud-recent-comment"></ul>
-</div>
-
-        </div>
-        <div class="status">
-  <div class="copyright">
-    
-    &copy; 2010 – 
-    <span itemprop="copyrightYear">2020</span>
-    <span class="with-love">
-      <i class="ic i-sakura rotate"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">Fan Chason @ Yume Shoka</span>
-  </div>
-  <div class="powered-by">
-    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
-  </div>
-</div>
-
-      </div>
-    </footer>
-  </div>
-<script data-config type="text/javascript">
-  var LOCAL = {
-    path: '',
-    favicon: {
-      show: "（●´3｀●）Goooood",
-      hide: "(´Д｀)Booooom"
-    },
-    search : {
-      placeholder: "Search for Posts",
-      empty: "We didn't find any results for the search: ${query}",
-      stats: "${hits} results found in ${time} ms"
-    },
-    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
-    ignores : [
-      function(uri) {
-        return uri.includes('#');
-      },
-      function(uri) {
-        return new RegExp(LOCAL.path+"$").test(uri);
-      }
-    ]
-  };
-</script>
-
-<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
-
-<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
-
-<script src="/js/app.js?v=0.2.5"></script>
+命令
+含义
 
 
 
+hexo init
+初始化一个文件夹，它会为这个文件夹配置所有骨架
 
-</body>
-</html>
+
+hexo g
+即hexo generate，生成静态文件
+
+
+hexo s
+即hexo server，创建服务
+
+
+hexo d
+即hexo deploy,用于将本地文件发布到github上
+
+
+hexo n
+即hexo new,用于新建一篇文章
+
+
+现在只是在本地搭建了一个技术博客，
+要想把博客内容让所有人都能看到，就得借助Github了，把博客内容部署到Github上去
+
+
+ ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Fan Chason</div><div class="author-info__description">Fan Chason的个人博客</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2020/12/18/hello-world/" title="Hello World">Hello World</a><time datetime="2020-12-17T23:09:20.949Z" title="Created 2020-12-18 07:09:20">2020-12-18</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" title="Viper架构探索实践（一）">Viper架构探索实践（一）</a><time datetime="2019-10-17T11:35:00.000Z" title="Created 2019-10-17 19:35:00">2019-10-17</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" title="使用fastlane实现iOS自动化打包上传fir.im和testflight">使用fastlane实现iOS自动化打包上传fir.im和testflight</a><time datetime="2019-10-11T08:41:33.000Z" title="Created 2019-10-11 16:41:33">2019-10-11</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" title="基于Hexo和Github搭建技术博客">基于Hexo和Github搭建技术博客</a><time datetime="2019-09-26T06:40:33.000Z" title="Created 2019-09-26 14:40:33">2019-09-26</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>Categories</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/"><span class="card-category-list-name">作者：Fan Chason</span><span class="card-category-list-count">3</span></a></li>
+            
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">搭建博客</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/" style="font-size: 1.1em; color: #999">自动化打包</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/10/"><span class="card-archive-list-date">十月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/09/"><span class="card-archive-list-date">九月 2019</span><span class="card-archive-list-count">1</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-12-23T08:37:18.656Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By Fan Chason</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
