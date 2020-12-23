@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>基于Hexo和Github搭建技术博客 | Fan Chason&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="准备:nodejs、git、npm、hexo 验证有没有敲命令，eg: npm -v，没有装先去装  npm可通过homebrew安装 brew install npm   Hexo安装 npm install hexo-cli -g   开始搭建博客 本地创建一个存放博客文件夹 eg: SkytechMobileBlog  切到SkytechMobileBlog目录下执行初始化 hexo ini">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Hexo和Github搭建技术博客">
+<meta property="og:url" content="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Fan Chason&#39;s Blog">
+<meta property="og:description" content="准备:nodejs、git、npm、hexo 验证有没有敲命令，eg: npm -v，没有装先去装  npm可通过homebrew安装 brew install npm   Hexo安装 npm install hexo-cli -g   开始搭建博客 本地创建一个存放博客文件夹 eg: SkytechMobileBlog  切到SkytechMobileBlog目录下执行初始化 hexo ini">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/useImage.png">
+<meta property="og:image" content="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/common_on.png">
+<meta property="article:published_time" content="2019-09-26T06:40:33.000Z">
+<meta property="article:modified_time" content="2020-04-22T02:58:33.000Z">
+<meta property="article:author" content="Fan Chason">
+<meta property="article:tag" content="搭建博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/useImage.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Fan Chason's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Fan Chason&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">不积跬步，无以致千里；不积小流，无以成江海</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-基于Hexo和Github搭建技术博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2019-09-26T06:40:33.000Z" itemprop="datePublished">2019-09-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/">作者：Fan Chason</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      基于Hexo和Github搭建技术博客
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="准备"><a href="#准备" class="headerlink" title="准备:"></a>准备:</h2><p><code>nodejs</code>、<code>git</code>、<code>npm</code>、<code>hexo</code></p>
+<p>验证有没有敲命令，eg: <code>npm -v</code>，没有装先去装</p>
+<ul>
+<li><p>npm可通过homebrew安装</p>
+<p><code>brew install npm</code> </p>
+</li>
+<li><p>Hexo安装</p>
+<p><code>npm install hexo-cli -g</code></p>
+</li>
+</ul>
+<h2 id="开始搭建博客"><a href="#开始搭建博客" class="headerlink" title="开始搭建博客"></a>开始搭建博客</h2><ul>
+<li><p>本地创建一个存放博客文件夹</p>
+<p>eg: SkytechMobileBlog</p>
+</li>
+<li><p>切到<code>SkytechMobileBlog</code>目录下执行<code>初始化</code></p>
+<p><code>hexo init</code></p>
+</li>
+<li><p>然后安装依赖</p>
+<p><code>npm install</code></p>
+</li>
+<li><p>生成静态文件</p>
+<p><code>hexo g</code></p>
+</li>
+<li><p>创建服务</p>
+<p><code>hexo s</code></p>
+</li>
+<li><p>hexo常用命令：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>hexo init</code></td>
+<td>初始化一个文件夹，它会为这个文件夹配置所有骨架</td>
+</tr>
+<tr>
+<td><code>hexo g</code></td>
+<td>即hexo generate，生成静态文件</td>
+</tr>
+<tr>
+<td><code>hexo s</code></td>
+<td>即hexo server，创建服务</td>
+</tr>
+<tr>
+<td><code>hexo d</code></td>
+<td>即hexo deploy,用于将本地文件发布到github上</td>
+</tr>
+<tr>
+<td><code>hexo n</code></td>
+<td>即hexo new,用于新建一篇文章</td>
+</tr>
+</tbody></table>
+<p>现在只是在本地搭建了一个技术博客，</p>
+<p>要想把博客内容让所有人都能看到，就得借助Github了，把博客内容部署到Github上去</p>
+</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><ol>
+<li>GitHub上登录/注册一个账号，创建仓库</li>
+</ol>
+<ul>
+<li><p>如果是团队博客</p>
+<p>先<code>New organization</code>，再<code>New repository</code>（名字为<code>xxx.github.io</code>，<code>xxx</code>为organization名称）</p>
+</li>
+<li><p>如果是个人博客：</p>
+<p><code>New repository</code>（名字为<code>xxx.github.io</code>，<code>xxx</code>为github账号）</p>
+</li>
+</ul>
+<ol start="2">
+<li>博客的根目录的<code>_config.yml</code>文件的底部<code>deploy</code>设置为：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;SkytechMobile&#x2F;SkytechMobile.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>注意：冒号（:）后都有一个空格。你可以把此段代码复制过去，并把<code>https://github.com/SkytechMobile/SkytechMobile.github.io.git</code>替换为你自己的Github仓库路径</p>
+<ol start="3">
+<li><p>部署</p>
+<p>根目录下执行</p>
+<p><code>hexo g</code></p>
+<p><code>hexo d</code></p>
+<p>或者直接</p>
+<p><code>hexo g -d</code></p>
+<p>如果此时报错你可以输入<code>npm install hexo-deployer-git --save</code>来解决</p>
+</li>
+<li><p>以上都没什么问题的话，访 <a target="_blank" rel="noopener" href="http://skytechmobile.github.io/">http://SkytechMobile.github.io/</a> 就能看到自己的博客了</p>
+</li>
+</ol>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><p>Eg: 把主题设置为<code>next</code>，最火的hexo的主题。</p>
+<ol>
+<li><p>下载主题</p>
+<p>在跟目录文件夹下输入如下命令下载next主题</p>
+<p><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
+</li>
+<li><p>设置主题</p>
+<p>把<code>SKytechMobileBlog/_config.yml</code>文件称为<code>站点配置</code></p>
+<p>把<code>SKytechMobileBlog/_config.yml</code>文件称为<code>主题配置</code></p>
+</li>
+</ol>
+<p>下载完成后，将<code>站点配置</code>文件的<code>theme</code>字段的值改为<code>next</code>，重新编译并上传到Github上后，访问博客链接，你就会发现主题已经改成next了</p>
+<p>next的默认语言为英文，你可以更改为简体中文，找到并打开<code>站点配置</code>文件，找到<code>language</code>字段，将值改为<code>zh-Hans</code></p>
+<ol start="3">
+<li>这里介绍下<code>站点配置</code>文件部分字段的含义：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: SkytechMobile团队博客 &#x2F;&#x2F; 博客名称</span><br><span class="line">subtitle:			   &#x2F;&#x2F; 博客副名称</span><br><span class="line">description:           &#x2F;&#x2F; 描述</span><br><span class="line">author: 晨之科SDK团队    &#x2F;&#x2F; 作者</span><br><span class="line">language: zh-Hans      &#x2F;&#x2F; 语言</span><br></pre></td></tr></table></figure>
+<h2 id="关于新建博客"><a href="#关于新建博客" class="headerlink" title="关于新建博客"></a>关于新建博客</h2><h3 id="一、如何新建博客"><a href="#一、如何新建博客" class="headerlink" title="一、如何新建博客"></a>一、如何新建博客</h3><p>新建命令</p>
+<p><code>hexo new xxx</code></p>
+<p>执行上面的命令即在<code>source/_posts/</code>目录下新建了名为<code>xxx的md文件</code>和<code>资源文件夹</code></p>
+<h3 id="二、将本地博客发布到线上"><a href="#二、将本地博客发布到线上" class="headerlink" title="二、将本地博客发布到线上"></a>二、将本地博客发布到线上</h3><p>生成静态文件，并将本地文件发布到github上，合并执行</p>
+<p><code>hexo g -d</code></p>
+<h3 id="三、写博客注意点"><a href="#三、写博客注意点" class="headerlink" title="三、写博客注意点"></a>三、写博客注意点</h3><ol>
+<li>如何上传带图片的博客？</li>
+</ol>
+<p><img src="useImage.png"></p>
+<ol start="2">
+<li><p>团队博客设置作者</p>
+<p>可在博客md文件<code>分类</code>字段设置</p>
+<p><code>categories：作者：Fan Chason</code></p>
+</li>
+</ol>
+<p><img src="common_on.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" data-id="ckizk542d0005asebcpn19ad5" data-title="基于Hexo和Github搭建技术博客" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="tag">搭建博客</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          使用fastlane实现iOS自动化打包上传fir.im和testflight
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/">作者：Fan Chason</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="tag">搭建博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9E%B6%E6%9E%84/" rel="tag">架构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/" rel="tag">自动化打包</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">搭建博客</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 10px;">架构</a> <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/" style="font-size: 10px;">自动化打包</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/12/18/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/">Viper架构探索实践（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/">使用fastlane实现iOS自动化打包上传fir.im和testflight</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">基于Hexo和Github搭建技术博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2020 Fan Chason<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
