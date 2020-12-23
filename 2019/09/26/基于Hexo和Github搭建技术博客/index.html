@@ -1,31 +1,552 @@
-extends includes/layout.pug
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
-        
-    if theme.reward.enable
-      !=partial('includes/post/reward', {}, {cache:theme.fragment_cache})
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
 
-    include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache:theme.fragment_cache})
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Fan Chason's Blog" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Fan Chason's Blog" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Fan Chason's Blog" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="搭建博客" />
+
+
+<link rel="canonical" href="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">
+
+
+
+  <title>
+基于Hexo和Github搭建技术博客 - 作者：Fan Chason |
+Yume Shoka = Fan Chason's Blog = 不积跬步，无以致千里；不积小流，无以成江海</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">基于Hexo和Github搭建技术博客
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2019-09-26 14:40:33">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2019-09-26T14:40:33+08:00">2019-09-26</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" itemprop="item" rel="index" title="In 作者：Fan Chason"><span itemprop="name">作者：Fan Chason</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Fan Chason">
+    <meta itemprop="description" content="不积跬步，无以致千里；不积小流，无以成江海, Fan Chason的个人博客">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Fan Chason's Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="准备"><a href="#准备" class="headerlink" title="准备:"></a>准备:</h2><p><code>nodejs</code>、<code>git</code>、<code>npm</code>、<code>hexo</code></p>
+<p>验证有没有敲命令，eg: <code>npm -v</code>，没有装先去装</p>
+<ul>
+<li><p>npm可通过homebrew安装</p>
+<p><code>brew install npm</code> </p>
+</li>
+<li><p>Hexo安装</p>
+<p><code>npm install hexo-cli -g</code></p>
+</li>
+</ul>
+<h2 id="开始搭建博客"><a href="#开始搭建博客" class="headerlink" title="开始搭建博客"></a>开始搭建博客</h2><ul>
+<li><p>本地创建一个存放博客文件夹</p>
+<p>eg: SkytechMobileBlog</p>
+</li>
+<li><p>切到<code>SkytechMobileBlog</code>目录下执行<code>初始化</code></p>
+<p><code>hexo init</code></p>
+</li>
+<li><p>然后安装依赖</p>
+<p><code>npm install</code></p>
+</li>
+<li><p>生成静态文件</p>
+<p><code>hexo g</code></p>
+</li>
+<li><p>创建服务</p>
+<p><code>hexo s</code></p>
+</li>
+<li><p>hexo常用命令：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>hexo init</code></td>
+<td>初始化一个文件夹，它会为这个文件夹配置所有骨架</td>
+</tr>
+<tr>
+<td><code>hexo g</code></td>
+<td>即hexo generate，生成静态文件</td>
+</tr>
+<tr>
+<td><code>hexo s</code></td>
+<td>即hexo server，创建服务</td>
+</tr>
+<tr>
+<td><code>hexo d</code></td>
+<td>即hexo deploy,用于将本地文件发布到github上</td>
+</tr>
+<tr>
+<td><code>hexo n</code></td>
+<td>即hexo new,用于新建一篇文章</td>
+</tr>
+</tbody></table>
+<p>现在只是在本地搭建了一个技术博客，</p>
+<p>要想把博客内容让所有人都能看到，就得借助Github了，把博客内容部署到Github上去</p>
+</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><ol>
+<li>GitHub上登录/注册一个账号，创建仓库</li>
+</ol>
+<ul>
+<li><p>如果是团队博客</p>
+<p>先<code>New organization</code>，再<code>New repository</code>（名字为<code>xxx.github.io</code>，<code>xxx</code>为organization名称）</p>
+</li>
+<li><p>如果是个人博客：</p>
+<p><code>New repository</code>（名字为<code>xxx.github.io</code>，<code>xxx</code>为github账号）</p>
+</li>
+</ul>
+<ol start="2">
+<li>博客的根目录的<code>_config.yml</code>文件的底部<code>deploy</code>设置为：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;SkytechMobile&#x2F;SkytechMobile.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>注意：冒号（:）后都有一个空格。你可以把此段代码复制过去，并把<code>https://github.com/SkytechMobile/SkytechMobile.github.io.git</code>替换为你自己的Github仓库路径</p>
+<ol start="3">
+<li><p>部署</p>
+<p>根目录下执行</p>
+<p><code>hexo g</code></p>
+<p><code>hexo d</code></p>
+<p>或者直接</p>
+<p><code>hexo g -d</code></p>
+<p>如果此时报错你可以输入<code>npm install hexo-deployer-git --save</code>来解决</p>
+</li>
+<li><p>以上都没什么问题的话，访 <a target="_blank" rel="noopener" href="http://skytechmobile.github.io/">http://SkytechMobile.github.io/</a> 就能看到自己的博客了</p>
+</li>
+</ol>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><p>Eg: 把主题设置为<code>next</code>，最火的hexo的主题。</p>
+<ol>
+<li><p>下载主题</p>
+<p>在跟目录文件夹下输入如下命令下载next主题</p>
+<p><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
+</li>
+<li><p>设置主题</p>
+<p>把<code>SKytechMobileBlog/_config.yml</code>文件称为<code>站点配置</code></p>
+<p>把<code>SKytechMobileBlog/_config.yml</code>文件称为<code>主题配置</code></p>
+</li>
+</ol>
+<p>下载完成后，将<code>站点配置</code>文件的<code>theme</code>字段的值改为<code>next</code>，重新编译并上传到Github上后，访问博客链接，你就会发现主题已经改成next了</p>
+<p>next的默认语言为英文，你可以更改为简体中文，找到并打开<code>站点配置</code>文件，找到<code>language</code>字段，将值改为<code>zh-Hans</code></p>
+<ol start="3">
+<li>这里介绍下<code>站点配置</code>文件部分字段的含义：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: SkytechMobile团队博客 &#x2F;&#x2F; 博客名称</span><br><span class="line">subtitle:			   &#x2F;&#x2F; 博客副名称</span><br><span class="line">description:           &#x2F;&#x2F; 描述</span><br><span class="line">author: 晨之科SDK团队    &#x2F;&#x2F; 作者</span><br><span class="line">language: zh-Hans      &#x2F;&#x2F; 语言</span><br></pre></td></tr></table></figure>
+<h2 id="关于新建博客"><a href="#关于新建博客" class="headerlink" title="关于新建博客"></a>关于新建博客</h2><h3 id="一、如何新建博客"><a href="#一、如何新建博客" class="headerlink" title="一、如何新建博客"></a>一、如何新建博客</h3><p>新建命令</p>
+<p><code>hexo new xxx</code></p>
+<p>执行上面的命令即在<code>source/_posts/</code>目录下新建了名为<code>xxx的md文件</code>和<code>资源文件夹</code></p>
+<h3 id="二、将本地博客发布到线上"><a href="#二、将本地博客发布到线上" class="headerlink" title="二、将本地博客发布到线上"></a>二、将本地博客发布到线上</h3><p>生成静态文件，并将本地文件发布到github上，合并执行</p>
+<p><code>hexo g -d</code></p>
+<h3 id="三、写博客注意点"><a href="#三、写博客注意点" class="headerlink" title="三、写博客注意点"></a>三、写博客注意点</h3><ol>
+<li>如何上传带图片的博客？</li>
+</ol>
+<p><img src="useImage.png"></p>
+<ol start="2">
+<li><p>团队博客设置作者</p>
+<p>可在博客md文件<code>分类</code>字段设置</p>
+<p><code>categories：作者：Fan Chason</code></p>
+</li>
+</ol>
+<p><img src="common_on.png"></p>
+
+      <div class="tags">
+          <a href="/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 搭建博客</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2020-04-22 10:58:33" itemprop="dateModified" datetime="2020-04-22T10:58:33+08:00">2020-04-22</time>
+  </span>
+</div>
+
       
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Fan Chason WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Fan Chason Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Fan Chason PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>Fan Chason <i class="ic i-at"><em>@</em></i>Fan Chason's Blog
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" title="基于Hexo和Github搭建技术博客">http://example.com/2019/09/26/基于Hexo和Github搭建技术博客/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclil3m4ej20zk0m8tn8.jpg" title="使用fastlane实现iOS自动化打包上传fir.im和testflight">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> 作者：Fan Chason</span>
+  <h3>使用fastlane实现iOS自动化打包上传fir.im和testflight</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">准备:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="toc-number">2.</span> <span class="toc-text">开始搭建博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="toc-number">3.</span> <span class="toc-text">部署到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-number">4.</span> <span class="toc-text">主题配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="toc-number">5.</span> <span class="toc-text">关于新建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%A6%82%E4%BD%95%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="toc-number">5.1.</span> <span class="toc-text">一、如何新建博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%B0%86%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E5%88%B0%E7%BA%BF%E4%B8%8A"><span class="toc-number">5.2.</span> <span class="toc-text">二、将本地博客发布到线上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="toc-number">5.3.</span> <span class="toc-text">三、写博客注意点</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li class="active"><a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" rel="bookmark" title="基于Hexo和Github搭建技术博客">基于Hexo和Github搭建技术博客</a></li><li><a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" rel="bookmark" title="使用fastlane实现iOS自动化打包上传fir.im和testflight">使用fastlane实现iOS自动化打包上传fir.im和testflight</a></li><li><a href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" rel="bookmark" title="Viper架构探索实践（一）">Viper架构探索实践（一）</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Fan Chason"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Fan Chason</p>
+  <div class="description" itemprop="description">Fan Chason的个人博客</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">4</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">1</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">3</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" title="In 作者：Fan Chason">作者：Fan Chason</a>
+</div>
+
+    <span><a href="/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/" title="Viper架构探索实践（一）">Viper架构探索实践（一）</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/18/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" title="In 作者：Fan Chason">作者：Fan Chason</a>
+</div>
+
+    <span><a href="/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" title="基于Hexo和Github搭建技术博客">基于Hexo和Github搭建技术博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/" title="In 作者：Fan Chason">作者：Fan Chason</a>
+</div>
+
+    <span><a href="/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/" title="使用fastlane实现iOS自动化打包上传fir.im和testflight">使用fastlane实现iOS自动化打包上传fir.im和testflight</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2020</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Fan Chason @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2019/09/26/基于Hexo和Github搭建技术博客/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
