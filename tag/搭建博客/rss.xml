@@ -3,46 +3,56 @@
     <channel>
         <title>Fan Chason&#39;s Blog • Posts by &#34;搭建博客&#34; tag</title>
         <link>http://example.com</link>
-        <description>Fan Chason的个人博客</description>
-        <language>zh-tw</language>
+        <description></description>
+        <language>zh-CN</language>
         <pubDate>Thu, 26 Sep 2019 14:40:33 +0800</pubDate>
         <lastBuildDate>Thu, 26 Sep 2019 14:40:33 +0800</lastBuildDate>
         <category>架构</category>
-        <category>搭建博客</category>
         <category>自动化打包</category>
+        <category>搭建博客</category>
         <item>
             <guid isPermalink="true">http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</guid>
             <title>基于Hexo和Github搭建技术博客</title>
             <link>http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</link>
             <category>搭建博客</category>
             <pubDate>Thu, 26 Sep 2019 14:40:33 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;准备&#34;&gt;&lt;a href=&#34;#准备&#34; class=&#34;headerlink&#34; title=&#34;准备:&#34;&gt;&lt;/a&gt;准备:&lt;/h2&gt;&lt;p&gt;&lt;code&gt;nodejs&lt;/code&gt;、&lt;code&gt;git&lt;/code&gt;、&lt;code&gt;npm&lt;/code&gt;、&lt;code&gt;hexo&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;验证有没有敲命令，eg: &lt;code&gt;npm -v&lt;/code&gt;，没有装先去装&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#准备&#34;&gt;#&lt;/a&gt; 准备:&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nodejs&lt;/code&gt; 、 &lt;code&gt;git&lt;/code&gt; 、 &lt;code&gt;npm&lt;/code&gt; 、 &lt;code&gt;hexo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;验证有没有敲命令，eg:  &lt;code&gt;npm -v&lt;/code&gt; ，没有装先去装&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;npm可通过homebrew安装&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;brew install npm&lt;/code&gt; &lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;npm 可通过 homebrew 安装&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install npm&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Hexo安装&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;Hexo 安装&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;开始搭建博客&#34;&gt;&lt;a href=&#34;#开始搭建博客&#34; class=&#34;headerlink&#34; title=&#34;开始搭建博客&#34;&gt;&lt;/a&gt;开始搭建博客&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;本地创建一个存放博客文件夹&lt;/p&gt;
+&lt;h2 id=&#34;开始搭建博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开始搭建博客&#34;&gt;#&lt;/a&gt; 开始搭建博客&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本地创建一个存放博客文件夹&lt;/p&gt;
 &lt;p&gt;eg: SkytechMobileBlog&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;切到&lt;code&gt;SkytechMobileBlog&lt;/code&gt;目录下执行&lt;code&gt;初始化&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;切到 &lt;code&gt;SkytechMobileBlog&lt;/code&gt;  目录下执行 &lt;code&gt;初始化&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo init&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;然后安装依赖&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;然后安装依赖&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;生成静态文件&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;生成静态文件&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo g&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;创建服务&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;创建服务&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo s&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;hexo常用命令：&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 常用命令：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -50,94 +60,108 @@
 &lt;th&gt;含义&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo init&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;初始化一个文件夹，它会为这个文件夹配置所有骨架&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo g&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo generate，生成静态文件&lt;/td&gt;
+&lt;td&gt;即 hexo generate，生成静态文件&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo s&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo server，创建服务&lt;/td&gt;
+&lt;td&gt;即 hexo server，创建服务&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo d&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo deploy,用于将本地文件发布到github上&lt;/td&gt;
+&lt;td&gt;即 hexo deploy, 用于将本地文件发布到 github 上&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo n&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo new,用于新建一篇文章&lt;/td&gt;
+&lt;td&gt;即 hexo new, 用于新建一篇文章&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;现在只是在本地搭建了一个技术博客，&lt;/p&gt;
-&lt;p&gt;要想把博客内容让所有人都能看到，就得借助Github了，把博客内容部署到Github上去&lt;/p&gt;
+&lt;p&gt;要想把博客内容让所有人都能看到，就得借助 Github 了，把博客内容部署到 Github 上去&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
-
-&lt;h2 id=&#34;部署到github&#34;&gt;&lt;a href=&#34;#部署到github&#34; class=&#34;headerlink&#34; title=&#34;部署到github&#34;&gt;&lt;/a&gt;部署到github&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;GitHub上登录/注册一个账号，创建仓库&lt;/li&gt;
+&lt;h2 id=&#34;部署到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#部署到github&#34;&gt;#&lt;/a&gt; 部署到 github&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;GitHub 上登录 / 注册一个账号，创建仓库&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;如果是团队博客&lt;/p&gt;
-&lt;p&gt;先&lt;code&gt;New organization&lt;/code&gt;，再&lt;code&gt;New repository&lt;/code&gt;（名字为&lt;code&gt;xxx.github.io&lt;/code&gt;，&lt;code&gt;xxx&lt;/code&gt;为organization名称）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;如果是团队博客&lt;/p&gt;
+&lt;p&gt;先 &lt;code&gt;New organization&lt;/code&gt; ，再 &lt;code&gt;New repository&lt;/code&gt; （名字为 &lt;code&gt;xxx.github.io&lt;/code&gt; ， &lt;code&gt;xxx&lt;/code&gt;  为 organization 名称）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果是个人博客：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;New repository&lt;/code&gt;（名字为&lt;code&gt;xxx.github.io&lt;/code&gt;，&lt;code&gt;xxx&lt;/code&gt;为github账号）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;如果是个人博客：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;New repository&lt;/code&gt; （名字为 &lt;code&gt;xxx.github.io&lt;/code&gt; ， &lt;code&gt;xxx&lt;/code&gt;  为 github 账号）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;博客的根目录的&lt;code&gt;_config.yml&lt;/code&gt;文件的底部&lt;code&gt;deploy&lt;/code&gt;设置为：&lt;/li&gt;
+&lt;li&gt;博客的根目录的 &lt;code&gt;_config.yml&lt;/code&gt;  文件的底部 &lt;code&gt;deploy&lt;/code&gt;  设置为：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  repository: https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;SkytechMobile&amp;#x2F;SkytechMobile.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;注意：冒号（:）后都有一个空格。你可以把此段代码复制过去，并把&lt;code&gt;https://github.com/SkytechMobile/SkytechMobile.github.io.git&lt;/code&gt;替换为你自己的Github仓库路径&lt;/p&gt;
+&lt;p&gt;注意：冒号（:）后都有一个空格。你可以把此段代码复制过去，并把 &lt;code&gt;https://github.com/SkytechMobile/SkytechMobile.github.io.git&lt;/code&gt;  替换为你自己的 Github 仓库路径&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;p&gt;部署&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;部署&lt;/p&gt;
 &lt;p&gt;根目录下执行&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo g&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo d&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;或者直接&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo g -d&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;如果此时报错你可以输入&lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt;来解决&lt;/p&gt;
+&lt;p&gt;如果此时报错你可以输入 &lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt;  来解决&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;以上都没什么问题的话，访 &lt;a href=&#34;http://skytechmobile.github.io/&#34;&gt;http://SkytechMobile.github.io/&lt;/a&gt; 就能看到自己的博客了&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;以上都没什么问题的话，访 &lt;a href=&#34;http://SkytechMobile.github.io/&#34;&gt;http://SkytechMobile.github.io/&lt;/a&gt; 就能看到自己的博客了&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;主题配置&#34;&gt;&lt;a href=&#34;#主题配置&#34; class=&#34;headerlink&#34; title=&#34;主题配置&#34;&gt;&lt;/a&gt;主题配置&lt;/h2&gt;&lt;p&gt;Eg: 把主题设置为&lt;code&gt;next&lt;/code&gt;，最火的hexo的主题。&lt;/p&gt;
+&lt;h2 id=&#34;主题配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主题配置&#34;&gt;#&lt;/a&gt; 主题配置&lt;/h2&gt;
+&lt;p&gt;Eg: 把主题设置为 &lt;code&gt;next&lt;/code&gt; ，最火的 hexo 的主题。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;下载主题&lt;/p&gt;
-&lt;p&gt;在跟目录文件夹下输入如下命令下载next主题&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;下载主题&lt;/p&gt;
+&lt;p&gt;在跟目录文件夹下输入如下命令下载 next 主题&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;git clone https://github.com/iissnan/hexo-theme-next themes/next&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;设置主题&lt;/p&gt;
-&lt;p&gt;把&lt;code&gt;SKytechMobileBlog/_config.yml&lt;/code&gt;文件称为&lt;code&gt;站点配置&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;把&lt;code&gt;SKytechMobileBlog/_config.yml&lt;/code&gt;文件称为&lt;code&gt;主题配置&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;设置主题&lt;/p&gt;
+&lt;p&gt;把 &lt;code&gt;SKytechMobileBlog/_config.yml&lt;/code&gt;  文件称为 &lt;code&gt;站点配置&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;把 &lt;code&gt;SKytechMobileBlog/_config.yml&lt;/code&gt;  文件称为 &lt;code&gt;主题配置&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;下载完成后，将&lt;code&gt;站点配置&lt;/code&gt;文件的&lt;code&gt;theme&lt;/code&gt;字段的值改为&lt;code&gt;next&lt;/code&gt;，重新编译并上传到Github上后，访问博客链接，你就会发现主题已经改成next了&lt;/p&gt;
-&lt;p&gt;next的默认语言为英文，你可以更改为简体中文，找到并打开&lt;code&gt;站点配置&lt;/code&gt;文件，找到&lt;code&gt;language&lt;/code&gt;字段，将值改为&lt;code&gt;zh-Hans&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;下载完成后，将 &lt;code&gt;站点配置&lt;/code&gt; 文件的 &lt;code&gt;theme&lt;/code&gt;  字段的值改为 &lt;code&gt;next&lt;/code&gt; ，重新编译并上传到 Github 上后，访问博客链接，你就会发现主题已经改成 next 了&lt;/p&gt;
+&lt;p&gt;next 的默认语言为英文，你可以更改为简体中文，找到并打开 &lt;code&gt;站点配置&lt;/code&gt; 文件，找到 &lt;code&gt;language&lt;/code&gt;  字段，将值改为 &lt;code&gt;zh-Hans&lt;/code&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;这里介绍下&lt;code&gt;站点配置&lt;/code&gt;文件部分字段的含义：&lt;/li&gt;
+&lt;li&gt;这里介绍下 &lt;code&gt;站点配置&lt;/code&gt; 文件部分字段的含义：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;title: SkytechMobile团队博客 &amp;#x2F;&amp;#x2F; 博客名称&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;subtitle:			   &amp;#x2F;&amp;#x2F; 博客副名称&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;description:           &amp;#x2F;&amp;#x2F; 描述&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;author: 晨之科SDK团队    &amp;#x2F;&amp;#x2F; 作者&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;language: zh-Hans      &amp;#x2F;&amp;#x2F; 语言&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;关于新建博客&#34;&gt;&lt;a href=&#34;#关于新建博客&#34; class=&#34;headerlink&#34; title=&#34;关于新建博客&#34;&gt;&lt;/a&gt;关于新建博客&lt;/h2&gt;&lt;h3 id=&#34;一、如何新建博客&#34;&gt;&lt;a href=&#34;#一、如何新建博客&#34; class=&#34;headerlink&#34; title=&#34;一、如何新建博客&#34;&gt;&lt;/a&gt;一、如何新建博客&lt;/h3&gt;&lt;p&gt;新建命令&lt;/p&gt;
+&lt;h2 id=&#34;关于新建博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于新建博客&#34;&gt;#&lt;/a&gt; 关于新建博客&lt;/h2&gt;
+&lt;h3 id=&#34;一-如何新建博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-如何新建博客&#34;&gt;#&lt;/a&gt; 一、如何新建博客&lt;/h3&gt;
+&lt;p&gt;新建命令&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo new xxx&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;执行上面的命令即在&lt;code&gt;source/_posts/&lt;/code&gt;目录下新建了名为&lt;code&gt;xxx的md文件&lt;/code&gt;和&lt;code&gt;资源文件夹&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;二、将本地博客发布到线上&#34;&gt;&lt;a href=&#34;#二、将本地博客发布到线上&#34; class=&#34;headerlink&#34; title=&#34;二、将本地博客发布到线上&#34;&gt;&lt;/a&gt;二、将本地博客发布到线上&lt;/h3&gt;&lt;p&gt;生成静态文件，并将本地文件发布到github上，合并执行&lt;/p&gt;
+&lt;p&gt;执行上面的命令即在 &lt;code&gt;source/_posts/&lt;/code&gt;  目录下新建了名为 &lt;code&gt;xxx的md文件&lt;/code&gt; 和 &lt;code&gt;资源文件夹&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;二-将本地博客发布到线上&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-将本地博客发布到线上&#34;&gt;#&lt;/a&gt; 二、将本地博客发布到线上&lt;/h3&gt;
+&lt;p&gt;生成静态文件，并将本地文件发布到 github 上，合并执行&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo g -d&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;三、写博客注意点&#34;&gt;&lt;a href=&#34;#三、写博客注意点&#34; class=&#34;headerlink&#34; title=&#34;三、写博客注意点&#34;&gt;&lt;/a&gt;三、写博客注意点&lt;/h3&gt;&lt;ol&gt;
+&lt;h3 id=&#34;三-写博客注意点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-写博客注意点&#34;&gt;#&lt;/a&gt; 三、写博客注意点&lt;/h3&gt;
+&lt;ol&gt;
 &lt;li&gt;如何上传带图片的博客？&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;useImage.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;useImage.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;p&gt;团队博客设置作者&lt;/p&gt;
-&lt;p&gt;可在博客md文件&lt;code&gt;分类&lt;/code&gt;字段设置&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;团队博客设置作者&lt;/p&gt;
+&lt;p&gt;可在博客 md 文件 &lt;code&gt;分类&lt;/code&gt; 字段设置&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;categories：作者：Fan Chason&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;common_on.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;common_on.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

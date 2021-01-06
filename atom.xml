@@ -1,192 +1,119 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>Fan Chason&#39;s Blog</title>
-    <link href="http://example.com" />
-    <updated>2020-12-17T23:09:20.949Z</updated>
-    <category term="架构" />
-    <category term="搭建博客" />
-    <category term="自动化打包" />
-    <entry>
-        <id>http://example.com/2020/12/18/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="http://example.com/2020/12/18/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-        <updated>2020-12-17T23:09:20.949Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/</id>
-        <title>Viper架构探索实践（一）</title>
-        <link rel="alternate" href="http://example.com/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-        <content type="html">&lt;h1 id=&#34;Viper架构图&#34;&gt;&lt;a href=&#34;#Viper架构图&#34; class=&#34;headerlink&#34; title=&#34;Viper架构图&#34;&gt;&lt;/a&gt;Viper架构图&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/1432381-6aa65d17f5ed033f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/1432381-0b5691a0070fbabd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;1865432-580872920986b640.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;VIPER的主要部分&#34;&gt;&lt;a href=&#34;#VIPER的主要部分&#34; class=&#34;headerlink&#34; title=&#34;VIPER的主要部分&#34;&gt;&lt;/a&gt;VIPER的主要部分&lt;/h2&gt;&lt;h3 id=&#34;简介&#34;&gt;&lt;a href=&#34;#简介&#34; class=&#34;headerlink&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;View: (视图）： 显示Presenter告知的内容，并将用户输入中继回Presenter。&lt;/li&gt;
-&lt;li&gt;Interactor: (交互器）：包含用例指定的业务逻辑。&lt;/li&gt;
-&lt;li&gt;Presenter: (表示层，也可称主持人）：包含用于准备显示内容（如从Interactor接收的）和用于对用户输入做出反应（通过从Interactor请求新数据）的视图逻辑。&lt;/li&gt;
-&lt;li&gt;Entity: (实体）：包含Interactor使用的基本模型对象。&lt;/li&gt;
-&lt;li&gt;Routing: (路由）：包含用于描述按哪个顺序显示哪些屏幕的导航逻辑。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这种分离也符合&lt;a href=&#34;http://www.objectmentor.com/resources/articles/srp.pdf&#34;&gt;单一责任原则&lt;/a&gt;。&lt;br&gt;Interactor负责业务分析师&lt;br&gt;Presenter代表交互设计师&lt;br&gt;View负责视觉设计师&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;相比MVX&#34;&gt;&lt;a href=&#34;#相比MVX&#34; class=&#34;headerlink&#34; title=&#34;相比MVX&#34;&gt;&lt;/a&gt;相比MVX&lt;/h3&gt;&lt;p&gt;相比之前的MVX架构，VIPER多出了两个东西：Interactor（交互器）和Router（路由）。&lt;/p&gt;
-&lt;p&gt;各部分职责如下：&lt;/p&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;- View&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;提供完整的视图，负责视图的组合、布局、更新&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向Presenter提供更新视图的接口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;将View相关的事件发送给Presenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Presenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;接收并处理来自View的事件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向Interactor请求调用业务逻辑&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向Interactor提供View中的数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;接收并处理来自Interactor的数据回调事件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;通知View进行更新操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;通过Router跳转到其他View&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Router&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;提供View之间的跳转功能，减少了模块间的耦合&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;初始化VIPER的各个模块&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Interactor&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;维护主要的业务逻辑功能，向Presenter提供现有的业务用例&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;维护、获取、更新Entity&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;当有业务相关的事件发生时，处理事件，并通知Presenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Entity&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;和Model一样的数据模型&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;Viper模版代码生成工具&#34;&gt;&lt;a href=&#34;#Viper模版代码生成工具&#34; class=&#34;headerlink&#34; title=&#34;Viper模版代码生成工具&#34;&gt;&lt;/a&gt;Viper模版代码生成工具&lt;/h1&gt;&lt;h2 id=&#34;推荐两个模版&#34;&gt;&lt;a href=&#34;#推荐两个模版&#34; class=&#34;headerlink&#34; title=&#34;推荐两个模版&#34;&gt;&lt;/a&gt;推荐两个模版&lt;/h2&gt;&lt;h3 id=&#34;Viperit&#34;&gt;&lt;a href=&#34;#Viperit&#34; class=&#34;headerlink&#34; title=&#34;Viperit&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://github.com/ferranabello/Viperit&#34;&gt;Viperit&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;支持Swift、SwiftUI&lt;/li&gt;
-&lt;li&gt;可创建viper架构模版&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;Generamba&#34;&gt;&lt;a href=&#34;#Generamba&#34; class=&#34;headerlink&#34; title=&#34;Generamba&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://github.com/strongself/Generamba&#34;&gt;Generamba&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;支持OC和Swift&lt;/li&gt;
-&lt;li&gt;可以创建mvvm、viper模版&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;了解模版语言Liquid&#34;&gt;&lt;a href=&#34;#了解模版语言Liquid&#34; class=&#34;headerlink&#34; title=&#34;了解模版语言Liquid&#34;&gt;&lt;/a&gt;了解模版语言Liquid&lt;/h2&gt;&lt;p&gt;github源码：**&lt;a href=&#34;https://github.com/Shopify/liquid&#34;&gt;liquid&lt;/a&gt;**&lt;br&gt;&lt;a href=&#34;https://www.baidu.com/link?url=fK4IqIz8Jd_NwiiLfMbodfFYy5521QApXPJBhxB5yD_ACOge0kdPzMlm5_3B_tT9&amp;wd=&amp;eqid=df8a26640004378f000000045a6a8ac1&#34;&gt;&lt;em&gt;Liquid&lt;/em&gt; 模板语言中文文档&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Liquid 是一门开源的模板语言，由 &lt;a href=&#34;https://www.shopify.com/&#34;&gt;Shopify&lt;/a&gt; 创造并用 Ruby 实现。它是 Shopify 主题的骨骼，并且被用于加载店铺系统的动态内容。&lt;br&gt;&lt;br&gt;从 2006 年起，Liquid 就被 Shopify 所使用，现在更是被大量 web 应用所使用&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;Viper架构实践&#34;&gt;&lt;a href=&#34;#Viper架构实践&#34; class=&#34;headerlink&#34; title=&#34;Viper架构实践&#34;&gt;&lt;/a&gt;Viper架构实践&lt;/h1&gt;&lt;p&gt;基于Viperit写了一个简单的新闻的demo&lt;br&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/FanChason/XCViperitDemo&#34;&gt;XCViperitDemo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;参考：&#34;&gt;&lt;a href=&#34;#参考：&#34; class=&#34;headerlink&#34; title=&#34;参考：&#34;&gt;&lt;/a&gt;参考：&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;viper原作者 By &lt;a href=&#34;mailto:jeff.gilbert@mutualmobile.com&#34;&gt;Jeff Gilbert&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/conradstoll&#34;&gt;Conrad Stoll&lt;/a&gt; 著&lt;br&gt;&lt;a href=&#34;https://www.objc.io/issues/13-architecture/viper/&#34;&gt;Architecting iOS Apps with VIPER&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://juejin.im/post/599a43035188252432172045&#34;&gt;iOS VIPER架构实践(二)：VIPER详解与实现&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/340b39c6d256&#34;&gt;iOS架构模式-VIPER&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-        <category term="架构" />
-        <updated>2019-10-17T11:35:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/</id>
-        <title>使用fastlane实现iOS自动化打包上传fir.im和testflight</title>
-        <link rel="alternate" href="http://example.com/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/"/>
-        <content type="html">&lt;h2 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;em&gt;日复一日重复打包工作，是在浪费宝贵的时间&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;自动化打包工具应运而生，是我们解放双手的利器&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.fastlane.tools/&#34;&gt;fastlane官方文档&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/fastlane/fastlane/tree/master/fastlane/docs#fastfile&#34;&gt;github地址&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;安装fastlane&#34;&gt;&lt;a href=&#34;#安装fastlane&#34; class=&#34;headerlink&#34; title=&#34;安装fastlane&#34;&gt;&lt;/a&gt;安装fastlane&lt;/h2&gt;&lt;h3 id=&#34;安装最新的Xcode命令行工具&#34;&gt;&lt;a href=&#34;#安装最新的Xcode命令行工具&#34; class=&#34;headerlink&#34; title=&#34;安装最新的Xcode命令行工具&#34;&gt;&lt;/a&gt;安装最新的Xcode命令行工具&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;可以&lt;a href=&#34;https://developer.apple.com/download/more/&#34;&gt;Developer Apple&lt;/a&gt;上手动下载对应的&lt;code&gt;Command Line Tools&lt;/code&gt; 安装&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;em&gt;fastlane官方推荐的&lt;code&gt;xcode-select --install&lt;/code&gt; 安装时最后结果是&lt;strong&gt;不能安装该软件&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;安装-fastlane&#34;&gt;&lt;a href=&#34;#安装-fastlane&#34; class=&#34;headerlink&#34; title=&#34;安装 fastlane&#34;&gt;&lt;/a&gt;安装 fastlane&lt;/h3&gt;&lt;p&gt;&lt;em&gt;放到&lt;code&gt;/usr/local/bin&lt;/code&gt;下面&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo gem install -n /usr/local/bin fastlane&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;其他的安装方法：（扩展，可跳过）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;1970838-d07d8f2b55853319.png&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;第一种是通过 Homebrew 软件包管理器来进行安装，&lt;br&gt;第二种就是我们最熟悉的方式，下载安装包来进行安装,&lt;br&gt;第三种是通过 RubyGems 来进行，RubyGems 是一个方便的 Ruby 程序包管理器，可以将一个 Ruby 应用程序打包到一个 Gem 里，作为一个安装单元。 一个  Gem 就是一个封装起来的应用程序或代码库&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;配置环境变量&#34;&gt;&lt;a href=&#34;#配置环境变量&#34; class=&#34;headerlink&#34; title=&#34;配置环境变量&#34;&gt;&lt;/a&gt;配置环境变量&lt;/h2&gt;&lt;p&gt;添加用户环境变量 &lt;/p&gt;
-&lt;p&gt;&lt;code&gt;vim ~/.bash_profile&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;添加&lt;/p&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export PATH&amp;#x3D;&amp;#x2F;usr&amp;#x2F;local&amp;#x2F;bin:$PATH&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;保存退出，使用 &lt;code&gt;source ~/.bash_profile&lt;/code&gt; 来使配置立即生效&lt;/p&gt;
-&lt;p&gt;现在在项目根目录下可以使用&lt;code&gt;fastlane&lt;/code&gt;了&lt;/p&gt;
-&lt;h2 id=&#34;fastlane使用&#34;&gt;&lt;a href=&#34;#fastlane使用&#34; class=&#34;headerlink&#34; title=&#34;fastlane使用&#34;&gt;&lt;/a&gt;fastlane使用&lt;/h2&gt;&lt;h3 id=&#34;在项目根目录下初始化&#34;&gt;&lt;a href=&#34;#在项目根目录下初始化&#34; class=&#34;headerlink&#34; title=&#34;在项目根目录下初始化&#34;&gt;&lt;/a&gt;在项目根目录下初始化&lt;/h3&gt;&lt;p&gt;&lt;code&gt;fastlane init&lt;/code&gt;&lt;/p&gt;
+  <title>Fan Chason&#39;s Blog</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-04-22T02:58:33.000Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Fan Chason</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Viper架构探索实践（一）</title>
+    <link href="http://example.com/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://example.com/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <published>2019-10-17T11:35:00.000Z</published>
+    <updated>2020-04-22T02:58:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="viper架构图"><a class="markdownIt-Anchor" href="#viper架构图">#</a> Viper 架构图</h1><p><img src="http://upload-images.jianshu.io/upload_images/1432381-6aa65d17f5ed033f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p><p><img src="https://upload-images.jianshu.io/upload_images/1432381-0b5691a0070fbabd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1865432-580872920986b640.png"></p><h2 id="viper的主要部分"><a class="markdownIt-Anchor" href="#viper的主要部分">#</a> VIPER 的主要部分</h2><h3 id="简介"><a class="markdownIt-Anchor" href="#简介">#</a> 简介</h3><ul><li>View: (视图）： 显示 Presenter 告知的内容，并将用户输入中继回 Presenter。</li><li>Interactor: (交互器）：包含用例指定的业务逻辑。</li><li>Presenter: (表示层，也可称主持人）：包含用于准备显示内容（如从 Interactor 接收的）和用于对用户输入做出反应（通过从 Interactor 请求新数据）的视图逻辑。</li><li>Entity: (实体）：包含 Interactor 使用的基本模型对象。</li><li>Routing: (路由）：包含用于描述按哪个顺序显示哪些屏幕的导航逻辑。</li></ul><blockquote><p>这种分离也符合<a href="http://www.objectmentor.com/resources/articles/srp.pdf">单一责任原则</a>。<br>Interactor 负责业务分析师<br> Presenter 代表交互设计师<br> View 负责视觉设计师</p></blockquote><h3 id="相比mvx"><a class="markdownIt-Anchor" href="#相比mvx">#</a> 相比 MVX</h3><p>相比之前的 MVX 架构，VIPER 多出了两个东西：Interactor（交互器）和 Router（路由）。</p><p>各部分职责如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">- View</span><br><span class="line">提供完整的视图，负责视图的组合、布局、更新</span><br><span class="line">向Presenter提供更新视图的接口</span><br><span class="line">将View相关的事件发送给Presenter</span><br><span class="line"></span><br><span class="line">- Presenter</span><br><span class="line">接收并处理来自View的事件</span><br><span class="line">向Interactor请求调用业务逻辑</span><br><span class="line">向Interactor提供View中的数据</span><br><span class="line">接收并处理来自Interactor的数据回调事件</span><br><span class="line">通知View进行更新操作</span><br><span class="line">通过Router跳转到其他View</span><br><span class="line"></span><br><span class="line">- Router</span><br><span class="line">提供View之间的跳转功能，减少了模块间的耦合</span><br><span class="line">初始化VIPER的各个模块</span><br><span class="line"></span><br><span class="line">- Interactor</span><br><span class="line">维护主要的业务逻辑功能，向Presenter提供现有的业务用例</span><br><span class="line">维护、获取、更新Entity</span><br><span class="line">当有业务相关的事件发生时，处理事件，并通知Presenter</span><br><span class="line"></span><br><span class="line">- Entity</span><br><span class="line">和Model一样的数据模型</span><br></pre></td></tr></table></figure><h1 id="viper模版代码生成工具"><a class="markdownIt-Anchor" href="#viper模版代码生成工具">#</a> Viper 模版代码生成工具</h1><h2 id="推荐两个模版"><a class="markdownIt-Anchor" href="#推荐两个模版">#</a> 推荐两个模版</h2><h3 id="viperit"><a class="markdownIt-Anchor" href="#viperit">#</a> <a href="https://github.com/ferranabello/Viperit">Viperit</a></h3><ul><li>支持 Swift、SwiftUI</li><li>可创建 viper 架构模版</li></ul><h3 id="generamba"><a class="markdownIt-Anchor" href="#generamba">#</a> <a href="https://github.com/strongself/Generamba">Generamba</a></h3><ul><li>支持 OC 和 Swift</li><li>可以创建 mvvm、viper 模版</li></ul><h2 id="了解模版语言liquid"><a class="markdownIt-Anchor" href="#了解模版语言liquid">#</a> 了解模版语言 Liquid</h2><p>github 源码：<strong><a href="https://github.com/Shopify/liquid">liquid</a></strong><br><a href="https://www.baidu.com/link?url=fK4IqIz8Jd_NwiiLfMbodfFYy5521QApXPJBhxB5yD_ACOge0kdPzMlm5_3B_tT9&amp;wd=&amp;eqid=df8a26640004378f000000045a6a8ac1"><em>Liquid</em> 模板语言中文文档</a></p><blockquote><p>Liquid 是一门开源的模板语言，由 <a href="https://www.shopify.com/">Shopify</a> 创造并用 Ruby 实现。它是 Shopify 主题的骨骼，并且被用于加载店铺系统的动态内容。<br><br>从 2006 年起，Liquid 就被 Shopify 所使用，现在更是被大量 web 应用所使用</p></blockquote><h1 id="viper架构实践"><a class="markdownIt-Anchor" href="#viper架构实践">#</a> Viper 架构实践</h1><p>基于 Viperit 写了一个简单的新闻的 demo<br><strong><a href="https://github.com/FanChason/XCViperitDemo">XCViperitDemo</a></strong></p><h1 id="参考"><a class="markdownIt-Anchor" href="#参考">#</a> 参考：</h1><ol><li>viper 原作者 By <a href="mailto:jeff.gilbert@mutualmobile.com">Jeff Gilbert</a> and <a href="https://twitter.com/conradstoll">Conrad Stoll</a> 著<br><a href="https://www.objc.io/issues/13-architecture/viper/"> Architecting iOS Apps with VIPER</a></li><li><a href="https://juejin.im/post/599a43035188252432172045">iOS VIPER 架构实践 (二)：VIPER 详解与实现</a></li><li><a href="https://www.jianshu.com/p/340b39c6d256">iOS 架构模式 - VIPER</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;viper架构图&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#viper架构图&quot;&gt;#&lt;/a&gt; Viper 架构图&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_ima</summary>
+      
+    
+    
+    
+    <category term="作者：Fan Chason" scheme="http://example.com/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/"/>
+    
+    
+    <category term="架构" scheme="http://example.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用fastlane实现iOS自动化打包上传fir.im和testflight</title>
+    <link href="http://example.com/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/"/>
+    <id>http://example.com/2019/10/11/%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0iOS%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0fir-im%E5%92%8Ctestflight/</id>
+    <published>2019-10-11T08:41:33.000Z</published>
+    <updated>2020-04-22T02:58:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2><p><em>日复一日重复打包工作，是在浪费宝贵的时间</em></p><p><em>自动化打包工具应运而生，是我们解放双手的利器</em></p><p><a href="https://docs.fastlane.tools/">fastlane 官方文档</a></p><p><a href="https://github.com/fastlane/fastlane/tree/master/fastlane/docs#fastfile">github 地址</a></p><h2 id="安装fastlane"><a class="markdownIt-Anchor" href="#安装fastlane">#</a> 安装 fastlane</h2><h3 id="安装最新的xcode命令行工具"><a class="markdownIt-Anchor" href="#安装最新的xcode命令行工具">#</a> 安装最新的 Xcode 命令行工具</h3><blockquote><p>可以<a href="https://developer.apple.com/download/more/"> Developer Apple</a> 上手动下载对应的 <code>Command Line Tools</code>  安装</p></blockquote><p><em>fastlane 官方推荐的 <code>xcode-select --install</code>  安装时最后结果是<strong>不能安装该软件</strong></em></p><h3 id="安装-fastlane"><a class="markdownIt-Anchor" href="#安装-fastlane">#</a> 安装 fastlane</h3><p><em>放到 <code>/usr/local/bin</code>  下面</em></p><p><code>sudo gem install -n /usr/local/bin fastlane</code></p><p>其他的安装方法：（扩展，可跳过）</p><p><img src="1970838-d07d8f2b55853319.png" alt=""></p><blockquote><p>第一种是通过 Homebrew 软件包管理器来进行安装，<br>第二种就是我们最熟悉的方式，下载安装包来进行安装，<br>第三种是通过 RubyGems 来进行，RubyGems 是一个方便的 Ruby 程序包管理器，可以将一个 Ruby 应用程序打包到一个 Gem 里，作为一个安装单元。 一个  Gem 就是一个封装起来的应用程序或代码库</p></blockquote><h2 id="配置环境变量"><a class="markdownIt-Anchor" href="#配置环境变量">#</a> 配置环境变量</h2><p>添加用户环境变量</p><p><code>vim ~/.bash_profile</code></p><p>添加</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;bin:$PATH</span><br><span class="line">...</span><br></pre></td></tr></table></figure><p>保存退出，使用  <code>source ~/.bash_profile</code>  来使配置立即生效</p><p>现在在项目根目录下可以使用 <code>fastlane</code>  了</p><h2 id="fastlane使用"><a class="markdownIt-Anchor" href="#fastlane使用">#</a> fastlane 使用</h2><h3 id="在项目根目录下初始化"><a class="markdownIt-Anchor" href="#在项目根目录下初始化">#</a> 在项目根目录下初始化</h3><p><code>fastlane init</code></p><ul><li><p>四个选项</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">What would you like to use fastlane for?</span><br><span class="line"></span><br><span class="line">1.Automate screenshots</span><br><span class="line">2.Automate beta distribution to TestFlight</span><br><span class="line">3.Automate App Store distribution</span><br><span class="line">4.Manual setup - manually setup your project to automate your tasks</span><br></pre></td></tr></table></figure><p>解释：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1 自动截屏。（帮助我们截取App的显示到appstore上的 截图）</span><br><span class="line">2 自动发布beta到TestFlight上，用于内测。</span><br><span class="line">3 自动打包发布到AppStore上。</span><br><span class="line">4 手动设置。</span><br></pre></td></tr></table></figure><p>上传 fir 选择的 4</p></li><li><p>初始化成功会生成如下目录</p></li></ul><p><img src="Xnip2019-10-09_14-40-37.jpg" alt=""></p><h3 id="配置相关文件"><a class="markdownIt-Anchor" href="#配置相关文件">#</a> 配置相关文件</h3><h4 id="配置gemfile"><a class="markdownIt-Anchor" href="#配置gemfile">#</a> 配置 Gemfile</h4><p>如果使用 cocoapods 要加上（<em>注意带上当前安装的 pod 的版本号</em>，否则会报错）</p><p><code>gem 'cocoapods', '~&gt;1.8.3'</code></p><p>执行</p><p><code>bundle install</code></p><blockquote><p>第一次运行 bundle install 时自动生成 Gemfile.lock 文件。以后每次运行 bundle install 时，如果 Gemfile 中的条目不变 bundle 就不会再次计算 gem 依赖版本号，直接根据 Gemfile.lock 检查和安装 gem。如果出现依赖冲突时可以通过 bundle update 更新 Gemfile.lock</p></blockquote><h4 id="配置fastfile"><a class="markdownIt-Anchor" href="#配置fastfile">#</a> 配置 Fastfile</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span><span class="title">ault_platform</span><span class="params">(<span class="symbol">:ios</span>)</span></span></span><br><span class="line"></span><br><span class="line">platform <span class="symbol">:ios</span> <span class="keyword">do</span></span><br><span class="line">  </span><br><span class="line">  before_all <span class="keyword">do</span></span><br><span class="line">    <span class="comment"># 如果你用 pod install</span></span><br><span class="line">    cocoapods </span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  </span><br><span class="line">  desc <span class="string">&quot;打包上传ipa到fir.im&quot;</span></span><br><span class="line">  lane <span class="symbol">:fir</span> <span class="keyword">do</span></span><br><span class="line">    </span><br><span class="line">  <span class="comment"># 如果你没有申请adhoc证书，sigh会自动帮你申请，并且添加到Xcode里</span></span><br><span class="line">  <span class="comment">#sigh(adhoc: true)</span></span><br><span class="line">      </span><br><span class="line">  <span class="comment"># 以下两个action来自fastlane-plugin-versioning，</span></span><br><span class="line">  <span class="comment"># 第一个递增 Build，第二个设定Version。</span></span><br><span class="line">  <span class="comment"># 如果你有多个target，就必须指定target的值，否则它会直接找找到的第一个plist修改</span></span><br><span class="line">  <span class="comment"># 在这里我建议每一个打的包的Build都要不一样，这样crash了拿到日志，可以对应到ipa上</span></span><br><span class="line">  </span><br><span class="line">    increment_build_number_in_plist(</span><br><span class="line">        <span class="symbol">target:</span> <span class="string">&#x27;TestDemo&#x27;</span>,</span><br><span class="line"> <span class="symbol">build_number:</span> <span class="string">&#x27;5&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    increment_version_number_in_plist(</span><br><span class="line">        <span class="symbol">target:</span> <span class="string">&#x27;TestDemo&#x27;</span>,</span><br><span class="line">        <span class="symbol">version_number:</span> <span class="string">&#x27;1.0&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    <span class="comment"># gym用来编译ipa</span></span><br><span class="line">    gym(</span><br><span class="line">        <span class="symbol">scheme:</span> <span class="string">&#x27;TestDemo&#x27;</span>,</span><br><span class="line">        <span class="symbol">export_method:</span> <span class="string">&quot;ad-hoc&quot;</span>, <span class="comment"># 指定打包方式 [&quot;app-store&quot;, &quot;ad-hoc&quot;, &quot;package&quot;, &quot;enterprise&quot;, &quot;development&quot;, &quot;developer-id&quot;]</span></span><br><span class="line">        <span class="comment">#teamID: &quot;xxxxxx&quot;,  # developer.apple.com 上查看</span></span><br><span class="line">        <span class="symbol">xcargs:</span> <span class="string">&quot;-allowProvisioningUpdates&quot;</span>,</span><br><span class="line">        <span class="symbol">output_directory:</span> <span class="string">&#x27;./firim&#x27;</span>,</span><br><span class="line">        <span class="symbol">output_name:</span> <span class="string">&#x27;TestDemo.ipa&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    <span class="comment"># 上传ipa到fir.im服务器，在fir.im获取firim_api_token</span></span><br><span class="line">    firim(<span class="symbol">firim_api_token:</span> <span class="string">&quot;xxxxxxxxxxxxx&quot;</span>)  <span class="comment"># token 在fir 上查看。</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  </span><br><span class="line">  desc <span class="string">&quot;打包上传testflight/app-store&quot;</span></span><br><span class="line">  lane <span class="symbol">:tf</span> <span class="keyword">do</span></span><br><span class="line"></span><br><span class="line">    increment_build_number_in_plist(</span><br><span class="line">        <span class="symbol">target:</span> <span class="string">&#x27;TestDemo&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    increment_version_number_in_plist(</span><br><span class="line">        <span class="symbol">target:</span> <span class="string">&#x27;TestDemo&#x27;</span>,</span><br><span class="line">        <span class="symbol">version_number:</span> <span class="string">&#x27;1.0&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    <span class="comment"># gym用来编译ipa</span></span><br><span class="line">    gym(</span><br><span class="line">        <span class="symbol">scheme:</span> <span class="string">&#x27;TestDemo&#x27;</span>,</span><br><span class="line">        <span class="symbol">export_method:</span> <span class="string">&quot;app-store&quot;</span>, <span class="comment"># 指定打包方式</span></span><br><span class="line">        <span class="comment">#teamID: &quot;xxxxxx&quot;,  # developer.apple.com 上查看</span></span><br><span class="line">        <span class="symbol">xcargs:</span> <span class="string">&quot;-allowProvisioningUpdates&quot;</span>,</span><br><span class="line">        <span class="symbol">output_directory:</span> <span class="string">&#x27;./testflight&#x27;</span>,</span><br><span class="line">        <span class="symbol">output_name:</span> <span class="string">&#x27;TestDemo.ipa&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    <span class="comment">#upload_to_testflight</span></span><br><span class="line">    appstore       <span class="comment"># 上传你的App iTunes Connect</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><blockquote><p>关于 build_number 与 version_number</p><p>1,version_number、build_number 都没有设置，会自动获取项目的 version 和 build 版本号，并且都自动加 1。例如，fastlane 打包前后版本号变化：ver1.0.2（Build 11）-&gt; ver1.0.3（Build 12）；<br>2,version_number 设置了、build_number 没设置，会自动获取项目 build 版本号，build 版本号 + 1；<br>3,version_number、build_number 都设置了，那打包出来的版本号就是设置的版本号，不会自动 + 1；</p></blockquote><h4 id="添加两个插件"><a class="markdownIt-Anchor" href="#添加两个插件">#</a> 添加两个插件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fastlane add_plugin versioning</span><br><span class="line">fastlane add_plugin firim</span><br></pre></td></tr></table></figure><h3 id="执行打包"><a class="markdownIt-Anchor" href="#执行打包">#</a> 执行打包</h3><h4 id="上传firim"><a class="markdownIt-Anchor" href="#上传firim">#</a> <a href="http://xn--fir-u28ds3c.im">上传 fir.im</a></h4><p><code>fastlane fir</code></p><blockquote><p><code>fir</code>  为 Fastfile 文件中 <code>lane :fir do</code>  处设置的名字，可以为别的名字</p></blockquote><p>执行打包成功如下图所示：</p><img src="Xnip2019-10-10_15-01-27.jpg" style="zoom:5%" /><ul><li><p>根目录下 <code>firim</code>  文件夹下可看到 <code>ipa</code>  文件</p><p><img src="Xnip2019-10-10_15-22-43.jpg" alt=""></p></li><li><p>fir.im 应用列表，多了刚上传的项目</p><p><img src="Xnip2019-10-10_15-01-59.jpg" alt=""></p></li></ul><h4 id="上传testflight"><a class="markdownIt-Anchor" href="#上传testflight">#</a> 上传 testFlight</h4><p><code>fastlane tf</code></p><h2 id="问题"><a class="markdownIt-Anchor" href="#问题">#</a> 问题</h2><ol><li>Could not find action, lane or variable ‘increment_build_number_in_plist’…</li></ol><p><img src="Xnip2019-10-10_11-39-52.jpg" alt=""></p><ul><li><p>解决：</p><p><code>fastlane add_plugin versioning</code></p></li></ul><p>参考：<a href="https://github.com/SiarheiFedartsou/fastlane-plugin-versioning/issues/20">https://github.com/SiarheiFedartsou/fastlane-plugin-versioning/issues/20</a></p><h2 id="参考"><a class="markdownIt-Anchor" href="#参考">#</a> 参考</h2><ol><li><a href="https://www.jianshu.com/p/2918cf082b9d">fastlane 自动打包到 fir.im 的踩坑之路</a></li><li><a href="https://docs.fastlane.tools/getting-started/ios/setup/">fastlane ios 快读入门文档</a></li><li><a href="https://www.jianshu.com/p/19ae8cc865b0">fastlane 使用说明书</a></li><li><a href="https://www.jianshu.com/p/48343a655f75">fastlane 在 mac 上配置 iOS 自动化上架</a></li><li><a href="https://www.jianshu.com/p/eab3e1ded17d">iOS 自动打包 - fastlane （一）</a></li><li><a href="https://juejin.im/post/5a7d51986fb9a063435ece35">和重复劳动说再见 - 使用 fastlane 进行 iOS 打包</a></li><li><a href="https://zhuanlan.zhihu.com/p/25976099">macOS/Linux 环境变量设置</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;日复一日重复打包工作，是在浪费宝贵的时间&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;自动化打包工具应运而生，是我们解放双手的利器&lt;/em&gt;&lt;/p</summary>
+      
+    
+    
+    
+    <category term="作者：Fan Chason" scheme="http://example.com/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/"/>
+    
+    
+    <category term="自动化打包" scheme="http://example.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Hexo和Github搭建技术博客</title>
+    <link href="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</id>
+    <published>2019-09-26T06:40:33.000Z</published>
+    <updated>2020-04-22T02:58:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="准备"><a class="markdownIt-Anchor" href="#准备">#</a> 准备:</h2><p><code>nodejs</code> 、 <code>git</code> 、 <code>npm</code> 、 <code>hexo</code></p><p>验证有没有敲命令，eg:  <code>npm -v</code> ，没有装先去装</p><ul><li><p>npm 可通过 homebrew 安装</p><p><code>brew install npm</code></p></li><li><p>Hexo 安装</p><p><code>npm install hexo-cli -g</code></p></li></ul><h2 id="开始搭建博客"><a class="markdownIt-Anchor" href="#开始搭建博客">#</a> 开始搭建博客</h2><ul><li><p>本地创建一个存放博客文件夹</p><p>eg: SkytechMobileBlog</p></li><li><p>切到 <code>SkytechMobileBlog</code>  目录下执行 <code>初始化</code></p><p><code>hexo init</code></p></li><li><p>然后安装依赖</p><p><code>npm install</code></p></li><li><p>生成静态文件</p><p><code>hexo g</code></p></li><li><p>创建服务</p><p><code>hexo s</code></p></li><li><p>hexo 常用命令：</p><table><thead><tr><th>命令</th><th>含义</th></tr></thead><tbody><tr><td><code>hexo init</code></td><td>初始化一个文件夹，它会为这个文件夹配置所有骨架</td></tr><tr><td><code>hexo g</code></td><td>即 hexo generate，生成静态文件</td></tr><tr><td><code>hexo s</code></td><td>即 hexo server，创建服务</td></tr><tr><td><code>hexo d</code></td><td>即 hexo deploy, 用于将本地文件发布到 github 上</td></tr><tr><td><code>hexo n</code></td><td>即 hexo new, 用于新建一篇文章</td></tr></tbody></table><p>现在只是在本地搭建了一个技术博客，</p><p>要想把博客内容让所有人都能看到，就得借助 Github 了，把博客内容部署到 Github 上去</p></li></ul><a id="more"></a><h2 id="部署到github"><a class="markdownIt-Anchor" href="#部署到github">#</a> 部署到 github</h2><ol><li>GitHub 上登录 / 注册一个账号，创建仓库</li></ol><ul><li><p>如果是团队博客</p><p>先 <code>New organization</code> ，再 <code>New repository</code> （名字为 <code>xxx.github.io</code> ， <code>xxx</code>  为 organization 名称）</p></li><li><p>如果是个人博客：</p><p><code>New repository</code> （名字为 <code>xxx.github.io</code> ， <code>xxx</code>  为 github 账号）</p></li></ul><ol start="2"><li>博客的根目录的 <code>_config.yml</code>  文件的底部 <code>deploy</code>  设置为：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;SkytechMobile&#x2F;SkytechMobile.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>注意：冒号（:）后都有一个空格。你可以把此段代码复制过去，并把 <code>https://github.com/SkytechMobile/SkytechMobile.github.io.git</code>  替换为你自己的 Github 仓库路径</p><ol start="3"><li><p>部署</p><p>根目录下执行</p><p><code>hexo g</code></p><p><code>hexo d</code></p><p>或者直接</p><p><code>hexo g -d</code></p><p>如果此时报错你可以输入 <code>npm install hexo-deployer-git --save</code>  来解决</p></li><li><p>以上都没什么问题的话，访 <a href="http://SkytechMobile.github.io/">http://SkytechMobile.github.io/</a> 就能看到自己的博客了</p></li></ol><h2 id="主题配置"><a class="markdownIt-Anchor" href="#主题配置">#</a> 主题配置</h2><p>Eg: 把主题设置为 <code>next</code> ，最火的 hexo 的主题。</p><ol><li><p>下载主题</p><p>在跟目录文件夹下输入如下命令下载 next 主题</p><p><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p></li><li><p>设置主题</p><p>把 <code>SKytechMobileBlog/_config.yml</code>  文件称为 <code>站点配置</code></p><p>把 <code>SKytechMobileBlog/_config.yml</code>  文件称为 <code>主题配置</code></p></li></ol><p>下载完成后，将 <code>站点配置</code> 文件的 <code>theme</code>  字段的值改为 <code>next</code> ，重新编译并上传到 Github 上后，访问博客链接，你就会发现主题已经改成 next 了</p><p>next 的默认语言为英文，你可以更改为简体中文，找到并打开 <code>站点配置</code> 文件，找到 <code>language</code>  字段，将值改为 <code>zh-Hans</code></p><ol start="3"><li>这里介绍下 <code>站点配置</code> 文件部分字段的含义：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: SkytechMobile团队博客 &#x2F;&#x2F; 博客名称</span><br><span class="line">subtitle:   &#x2F;&#x2F; 博客副名称</span><br><span class="line">description:           &#x2F;&#x2F; 描述</span><br><span class="line">author: 晨之科SDK团队    &#x2F;&#x2F; 作者</span><br><span class="line">language: zh-Hans      &#x2F;&#x2F; 语言</span><br></pre></td></tr></table></figure><h2 id="关于新建博客"><a class="markdownIt-Anchor" href="#关于新建博客">#</a> 关于新建博客</h2><h3 id="一-如何新建博客"><a class="markdownIt-Anchor" href="#一-如何新建博客">#</a> 一、如何新建博客</h3><p>新建命令</p><p><code>hexo new xxx</code></p><p>执行上面的命令即在 <code>source/_posts/</code>  目录下新建了名为 <code>xxx的md文件</code> 和 <code>资源文件夹</code></p><h3 id="二-将本地博客发布到线上"><a class="markdownIt-Anchor" href="#二-将本地博客发布到线上">#</a> 二、将本地博客发布到线上</h3><p>生成静态文件，并将本地文件发布到 github 上，合并执行</p><p><code>hexo g -d</code></p><h3 id="三-写博客注意点"><a class="markdownIt-Anchor" href="#三-写博客注意点">#</a> 三、写博客注意点</h3><ol><li>如何上传带图片的博客？</li></ol><p><img src="useImage.png" alt=""></p><ol start="2"><li><p>团队博客设置作者</p><p>可在博客 md 文件 <code>分类</code> 字段设置</p><p><code>categories：作者：Fan Chason</code></p></li></ol><p><img src="common_on.png" alt=""></p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;准备&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#准备&quot;&gt;#&lt;/a&gt; 准备:&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nodejs&lt;/code&gt; 、 &lt;code&gt;git&lt;/code&gt; 、 &lt;code&gt;npm&lt;/code&gt; 、 &lt;code&gt;hexo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;验证有没有敲命令，eg:  &lt;code&gt;npm -v&lt;/code&gt; ，没有装先去装&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;四个选项&lt;/p&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;What would you like to use fastlane for?&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;1.Automate screenshots&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2.Automate beta distribution to TestFlight&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3.Automate App Store distribution&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4.Manual setup - manually setup your project to automate your tasks&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;解释：&lt;/p&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1 自动截屏。（帮助我们截取App的显示到appstore上的 截图）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2 自动发布beta到TestFlight上，用于内测。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3 自动打包发布到AppStore上。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4 手动设置。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
+&lt;li&gt;
+&lt;p&gt;npm 可通过 homebrew 安装&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install npm&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;  上传fir选择的4&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;初始化成功会生成如下目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;Xnip2019-10-09_14-40-37.jpg&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;配置相关文件&#34;&gt;&lt;a href=&#34;#配置相关文件&#34; class=&#34;headerlink&#34; title=&#34;配置相关文件&#34;&gt;&lt;/a&gt;配置相关文件&lt;/h3&gt;&lt;h4 id=&#34;配置Gemfile&#34;&gt;&lt;a href=&#34;#配置Gemfile&#34; class=&#34;headerlink&#34; title=&#34;配置Gemfile&#34;&gt;&lt;/a&gt;配置Gemfile&lt;/h4&gt;&lt;p&gt;如果使用cocoapods要加上（&lt;em&gt;注意带上当前安装的pod的版本号&lt;/em&gt;，否则会报错）&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;gem &amp;#39;cocoapods&amp;#39;, &amp;#39;~&amp;gt;1.8.3&amp;#39;&lt;/code&gt; &lt;/p&gt;
-&lt;p&gt;执行 &lt;/p&gt;
-&lt;p&gt;&lt;code&gt;bundle install&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;第一次运行 bundle install 时自动生成 Gemfile.lock 文件。以后每次运行 bundle install 时,如果 Gemfile 中的条目不变 bundle 就不会再次计算 gem 依赖版本号，直接根据 Gemfile.lock 检查和安装 gem。如果出现依赖冲突时可以通过 bundle update 更新 Gemfile.lock&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;配置Fastfile&#34;&gt;&lt;a href=&#34;#配置Fastfile&#34; class=&#34;headerlink&#34; title=&#34;配置Fastfile&#34;&gt;&lt;/a&gt;配置Fastfile&lt;/h4&gt;&lt;figure class=&#34;highlight ruby&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt;&lt;span class=&#34;title&#34;&gt;ault_platform&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;symbol&#34;&gt;:ios&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;platform &lt;span class=&#34;symbol&#34;&gt;:ios&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	before_all &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    	&lt;span class=&#34;comment&#34;&gt;# 如果你用 pod install&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    	cocoapods &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	&lt;span class=&#34;keyword&#34;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	desc &lt;span class=&#34;string&#34;&gt;&amp;quot;打包上传ipa到fir.im&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	lane &lt;span class=&#34;symbol&#34;&gt;:fir&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	&lt;span class=&#34;comment&#34;&gt;# 如果你没有申请adhoc证书，sigh会自动帮你申请，并且添加到Xcode里&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	&lt;span class=&#34;comment&#34;&gt;#	sigh(adhoc: true)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	&lt;span class=&#34;comment&#34;&gt;# 以下两个action来自fastlane-plugin-versioning，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	&lt;span class=&#34;comment&#34;&gt;# 第一个递增 Build，第二个设定Version。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	&lt;span class=&#34;comment&#34;&gt;# 如果你有多个target，就必须指定target的值，否则它会直接找找到的第一个plist修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	&lt;span class=&#34;comment&#34;&gt;# 在这里我建议每一个打的包的Build都要不一样，这样crash了拿到日志，可以对应到ipa上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    increment_build_number_in_plist(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;target:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; 				&lt;span class=&#34;symbol&#34;&gt;build_number:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;5&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    increment_version_number_in_plist(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;target:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;version_number:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;1.0&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;# gym用来编译ipa&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    gym(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;scheme:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;export_method:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;ad-hoc&amp;quot;&lt;/span&gt;, &lt;span class=&#34;comment&#34;&gt;# 指定打包方式 [&amp;quot;app-store&amp;quot;, &amp;quot;ad-hoc&amp;quot;, &amp;quot;package&amp;quot;, &amp;quot;enterprise&amp;quot;, &amp;quot;development&amp;quot;, &amp;quot;developer-id&amp;quot;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;#teamID: &amp;quot;xxxxxx&amp;quot;,  # developer.apple.com 上查看&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;xcargs:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;-allowProvisioningUpdates&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;output_directory:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;./firim&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;output_name:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo.ipa&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;# 上传ipa到fir.im服务器，在fir.im获取firim_api_token&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    firim(&lt;span class=&#34;symbol&#34;&gt;firim_api_token:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;xxxxxxxxxxxxx&amp;quot;&lt;/span&gt;)  &lt;span class=&#34;comment&#34;&gt;# token 在fir 上查看。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  desc &lt;span class=&#34;string&#34;&gt;&amp;quot;打包上传testflight/app-store&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  lane &lt;span class=&#34;symbol&#34;&gt;:tf&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    increment_build_number_in_plist(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;target:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    increment_version_number_in_plist(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;target:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;version_number:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;1.0&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;# gym用来编译ipa&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    gym(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;scheme:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;export_method:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;app-store&amp;quot;&lt;/span&gt;, &lt;span class=&#34;comment&#34;&gt;# 指定打包方式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;#teamID: &amp;quot;xxxxxx&amp;quot;,  # developer.apple.com 上查看&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;xcargs:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;-allowProvisioningUpdates&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;output_directory:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;./testflight&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;symbol&#34;&gt;output_name:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;TestDemo.ipa&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;#upload_to_testflight&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    appstore       &lt;span class=&#34;comment&#34;&gt;# 上传你的App iTunes Connect&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;关于build_number与version_number&lt;/p&gt;
-&lt;p&gt;1,version_number、build_number都没有设置，会自动获取项目的version和build版本号，并且都自动加1。例如，fastlane打包前后版本号变化：ver1.0.2（Build 11）-&amp;gt; ver1.0.3（Build 12）；&lt;br&gt;2,version_number设置了、build_number没设置，会自动获取项目build版本号，build版本号+1；&lt;br&gt;3,version_number、build_number都设置了，那打包出来的版本号就是设置的版本号，不会自动+1；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;添加两个插件&#34;&gt;&lt;a href=&#34;#添加两个插件&#34; class=&#34;headerlink&#34; title=&#34;添加两个插件&#34;&gt;&lt;/a&gt;添加两个插件&lt;/h4&gt;&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fastlane add_plugin versioning&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastlane add_plugin firim&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;执行打包&#34;&gt;&lt;a href=&#34;#执行打包&#34; class=&#34;headerlink&#34; title=&#34;执行打包&#34;&gt;&lt;/a&gt;执行打包&lt;/h3&gt;&lt;h4 id=&#34;上传fir-im&#34;&gt;&lt;a href=&#34;#上传fir-im&#34; class=&#34;headerlink&#34; title=&#34;上传fir.im&#34;&gt;&lt;/a&gt;上传fir.im&lt;/h4&gt;&lt;p&gt;&lt;code&gt;fastlane fir&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;fir&lt;/code&gt;为Fastfile文件中&lt;code&gt;lane :fir do&lt;/code&gt;处设置的名字，可以为别的名字&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;执行打包成功如下图所示：&lt;/p&gt;
-&lt;img src=&#34;Xnip2019-10-10_15-01-27.jpg&#34; style=&#34;zoom:5%&#34; /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;根目录下&lt;code&gt;firim&lt;/code&gt;文件夹下可看到&lt;code&gt;ipa&lt;/code&gt;文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Xnip2019-10-10_15-22-43.jpg&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;fir.im应用列表，多了刚上传的项目&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Xnip2019-10-10_15-01-59.jpg&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;上传testFlight&#34;&gt;&lt;a href=&#34;#上传testFlight&#34; class=&#34;headerlink&#34; title=&#34;上传testFlight&#34;&gt;&lt;/a&gt;上传testFlight&lt;/h4&gt;&lt;p&gt;&lt;code&gt;fastlane tf&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;问题&#34;&gt;&lt;a href=&#34;#问题&#34; class=&#34;headerlink&#34; title=&#34;问题&#34;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;Could not find action, lane or variable ‘increment_build_number_in_plist’…&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;Xnip2019-10-10_11-39-52.jpg&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;解决：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;fastlane add_plugin versioning&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;参考：&lt;a href=&#34;https://github.com/SiarheiFedartsou/fastlane-plugin-versioning/issues/20&#34;&gt;https://github.com/SiarheiFedartsou/fastlane-plugin-versioning/issues/20&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;参考&#34;&gt;&lt;a href=&#34;#参考&#34; class=&#34;headerlink&#34; title=&#34;参考&#34;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/2918cf082b9d&#34;&gt;fastlane 自动打包到 fir.im 的踩坑之路&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.fastlane.tools/getting-started/ios/setup/&#34;&gt;fastlane ios快读入门文档&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/19ae8cc865b0&#34;&gt;fastlane使用说明书&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/48343a655f75&#34;&gt;fastlane 在mac上配置iOS自动化上架&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/eab3e1ded17d&#34;&gt;iOS 自动打包 - fastlane （一）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://juejin.im/post/5a7d51986fb9a063435ece35&#34;&gt;和重复劳动说再见-使用fastlane进行iOS打包&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/25976099&#34;&gt;macOS/Linux 环境变量设置&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-        <category term="自动化打包" />
-        <updated>2019-10-11T08:41:33.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</id>
-        <title>基于Hexo和Github搭建技术博客</title>
-        <link rel="alternate" href="http://example.com/2019/09/26/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/"/>
-        <content type="html">&lt;h2 id=&#34;准备&#34;&gt;&lt;a href=&#34;#准备&#34; class=&#34;headerlink&#34; title=&#34;准备:&#34;&gt;&lt;/a&gt;准备:&lt;/h2&gt;&lt;p&gt;&lt;code&gt;nodejs&lt;/code&gt;、&lt;code&gt;git&lt;/code&gt;、&lt;code&gt;npm&lt;/code&gt;、&lt;code&gt;hexo&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;验证有没有敲命令，eg: &lt;code&gt;npm -v&lt;/code&gt;，没有装先去装&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;npm可通过homebrew安装&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;brew install npm&lt;/code&gt; &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Hexo安装&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;Hexo 安装&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;开始搭建博客&#34;&gt;&lt;a href=&#34;#开始搭建博客&#34; class=&#34;headerlink&#34; title=&#34;开始搭建博客&#34;&gt;&lt;/a&gt;开始搭建博客&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;本地创建一个存放博客文件夹&lt;/p&gt;
+&lt;h2 id=&quot;开始搭建博客&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#开始搭建博客&quot;&gt;#&lt;/a&gt; 开始搭建博客&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本地创建一个存放博客文件夹&lt;/p&gt;
 &lt;p&gt;eg: SkytechMobileBlog&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;切到&lt;code&gt;SkytechMobileBlog&lt;/code&gt;目录下执行&lt;code&gt;初始化&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;切到 &lt;code&gt;SkytechMobileBlog&lt;/code&gt;  目录下执行 &lt;code&gt;初始化&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo init&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;然后安装依赖&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;然后安装依赖&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;生成静态文件&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;生成静态文件&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo g&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;创建服务&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;创建服务&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo s&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;hexo常用命令：&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 常用命令：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -194,96 +121,41 @@
 &lt;th&gt;含义&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo init&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;初始化一个文件夹，它会为这个文件夹配置所有骨架&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo g&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo generate，生成静态文件&lt;/td&gt;
+&lt;td&gt;即 hexo generate，生成静态文件&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo s&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo server，创建服务&lt;/td&gt;
+&lt;td&gt;即 hexo server，创建服务&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo d&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo deploy,用于将本地文件发布到github上&lt;/td&gt;
+&lt;td&gt;即 hexo deploy, 用于将本地文件发布到 github 上&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;hexo n&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;即hexo new,用于新建一篇文章&lt;/td&gt;
+&lt;td&gt;即 hexo new, 用于新建一篇文章&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;现在只是在本地搭建了一个技术博客，&lt;/p&gt;
-&lt;p&gt;要想把博客内容让所有人都能看到，就得借助Github了，把博客内容部署到Github上去&lt;/p&gt;
+&lt;p&gt;要想把博客内容让所有人都能看到，就得借助 Github 了，把博客内容部署到 Github 上去&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
-
-&lt;h2 id=&#34;部署到github&#34;&gt;&lt;a href=&#34;#部署到github&#34; class=&#34;headerlink&#34; title=&#34;部署到github&#34;&gt;&lt;/a&gt;部署到github&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;GitHub上登录/注册一个账号，创建仓库&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;如果是团队博客&lt;/p&gt;
-&lt;p&gt;先&lt;code&gt;New organization&lt;/code&gt;，再&lt;code&gt;New repository&lt;/code&gt;（名字为&lt;code&gt;xxx.github.io&lt;/code&gt;，&lt;code&gt;xxx&lt;/code&gt;为organization名称）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果是个人博客：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;New repository&lt;/code&gt;（名字为&lt;code&gt;xxx.github.io&lt;/code&gt;，&lt;code&gt;xxx&lt;/code&gt;为github账号）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;博客的根目录的&lt;code&gt;_config.yml&lt;/code&gt;文件的底部&lt;code&gt;deploy&lt;/code&gt;设置为：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  repository: https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;SkytechMobile&amp;#x2F;SkytechMobile.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;注意：冒号（:）后都有一个空格。你可以把此段代码复制过去，并把&lt;code&gt;https://github.com/SkytechMobile/SkytechMobile.github.io.git&lt;/code&gt;替换为你自己的Github仓库路径&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;p&gt;部署&lt;/p&gt;
-&lt;p&gt;根目录下执行&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;hexo g&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;hexo d&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;或者直接&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;hexo g -d&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;如果此时报错你可以输入&lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt;来解决&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;以上都没什么问题的话，访 &lt;a href=&#34;http://skytechmobile.github.io/&#34;&gt;http://SkytechMobile.github.io/&lt;/a&gt; 就能看到自己的博客了&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;主题配置&#34;&gt;&lt;a href=&#34;#主题配置&#34; class=&#34;headerlink&#34; title=&#34;主题配置&#34;&gt;&lt;/a&gt;主题配置&lt;/h2&gt;&lt;p&gt;Eg: 把主题设置为&lt;code&gt;next&lt;/code&gt;，最火的hexo的主题。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;下载主题&lt;/p&gt;
-&lt;p&gt;在跟目录文件夹下输入如下命令下载next主题&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;git clone https://github.com/iissnan/hexo-theme-next themes/next&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;设置主题&lt;/p&gt;
-&lt;p&gt;把&lt;code&gt;SKytechMobileBlog/_config.yml&lt;/code&gt;文件称为&lt;code&gt;站点配置&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;把&lt;code&gt;SKytechMobileBlog/_config.yml&lt;/code&gt;文件称为&lt;code&gt;主题配置&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;下载完成后，将&lt;code&gt;站点配置&lt;/code&gt;文件的&lt;code&gt;theme&lt;/code&gt;字段的值改为&lt;code&gt;next&lt;/code&gt;，重新编译并上传到Github上后，访问博客链接，你就会发现主题已经改成next了&lt;/p&gt;
-&lt;p&gt;next的默认语言为英文，你可以更改为简体中文，找到并打开&lt;code&gt;站点配置&lt;/code&gt;文件，找到&lt;code&gt;language&lt;/code&gt;字段，将值改为&lt;code&gt;zh-Hans&lt;/code&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;这里介绍下&lt;code&gt;站点配置&lt;/code&gt;文件部分字段的含义：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;title: SkytechMobile团队博客 &amp;#x2F;&amp;#x2F; 博客名称&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;subtitle:			   &amp;#x2F;&amp;#x2F; 博客副名称&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;description:           &amp;#x2F;&amp;#x2F; 描述&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;author: 晨之科SDK团队    &amp;#x2F;&amp;#x2F; 作者&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;language: zh-Hans      &amp;#x2F;&amp;#x2F; 语言&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;关于新建博客&#34;&gt;&lt;a href=&#34;#关于新建博客&#34; class=&#34;headerlink&#34; title=&#34;关于新建博客&#34;&gt;&lt;/a&gt;关于新建博客&lt;/h2&gt;&lt;h3 id=&#34;一、如何新建博客&#34;&gt;&lt;a href=&#34;#一、如何新建博客&#34; class=&#34;headerlink&#34; title=&#34;一、如何新建博客&#34;&gt;&lt;/a&gt;一、如何新建博客&lt;/h3&gt;&lt;p&gt;新建命令&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;hexo new xxx&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;执行上面的命令即在&lt;code&gt;source/_posts/&lt;/code&gt;目录下新建了名为&lt;code&gt;xxx的md文件&lt;/code&gt;和&lt;code&gt;资源文件夹&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;二、将本地博客发布到线上&#34;&gt;&lt;a href=&#34;#二、将本地博客发布到线上&#34; class=&#34;headerlink&#34; title=&#34;二、将本地博客发布到线上&#34;&gt;&lt;/a&gt;二、将本地博客发布到线上&lt;/h3&gt;&lt;p&gt;生成静态文件，并将本地文件发布到github上，合并执行&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;hexo g -d&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;三、写博客注意点&#34;&gt;&lt;a href=&#34;#三、写博客注意点&#34; class=&#34;headerlink&#34; title=&#34;三、写博客注意点&#34;&gt;&lt;/a&gt;三、写博客注意点&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;如何上传带图片的博客？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;useImage.png&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;p&gt;团队博客设置作者&lt;/p&gt;
-&lt;p&gt;可在博客md文件&lt;code&gt;分类&lt;/code&gt;字段设置&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;categories：作者：Fan Chason&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;common_on.png&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="搭建博客" />
-        <updated>2019-09-26T06:40:33.000Z</updated>
-    </entry>
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="作者：Fan Chason" scheme="http://example.com/categories/%E4%BD%9C%E8%80%85%EF%BC%9AFan-Chason/"/>
+    
+    
+    <category term="搭建博客" scheme="http://example.com/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
 </feed>

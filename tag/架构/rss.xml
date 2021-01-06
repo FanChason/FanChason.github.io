@@ -3,51 +3,69 @@
     <channel>
         <title>Fan Chason&#39;s Blog • Posts by &#34;架构&#34; tag</title>
         <link>http://example.com</link>
-        <description>Fan Chason的个人博客</description>
-        <language>zh-tw</language>
+        <description></description>
+        <language>zh-CN</language>
         <pubDate>Thu, 17 Oct 2019 19:35:00 +0800</pubDate>
         <lastBuildDate>Thu, 17 Oct 2019 19:35:00 +0800</lastBuildDate>
         <category>架构</category>
-        <category>搭建博客</category>
         <category>自动化打包</category>
+        <category>搭建博客</category>
         <item>
             <guid isPermalink="true">http://example.com/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
             <title>Viper架构探索实践（一）</title>
             <link>http://example.com/2019/10/17/Viper%E6%9E%B6%E6%9E%84%E6%8E%A2%E7%B4%A2%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/</link>
             <category>架构</category>
             <pubDate>Thu, 17 Oct 2019 19:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Viper架构图&#34;&gt;&lt;a href=&#34;#Viper架构图&#34; class=&#34;headerlink&#34; title=&#34;Viper架构图&#34;&gt;&lt;/a&gt;Viper架构图&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/1432381-6aa65d17f5ed033f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;viper架构图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#viper架构图&#34;&gt;#&lt;/a&gt; Viper 架构图&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/1432381-6aa65d17f5ed033f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/1432381-0b5691a0070fbabd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;1865432-580872920986b640.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;VIPER的主要部分&#34;&gt;&lt;a href=&#34;#VIPER的主要部分&#34; class=&#34;headerlink&#34; title=&#34;VIPER的主要部分&#34;&gt;&lt;/a&gt;VIPER的主要部分&lt;/h2&gt;&lt;h3 id=&#34;简介&#34;&gt;&lt;a href=&#34;#简介&#34; class=&#34;headerlink&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;View: (视图）： 显示Presenter告知的内容，并将用户输入中继回Presenter。&lt;/li&gt;
+&lt;h2 id=&#34;viper的主要部分&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#viper的主要部分&#34;&gt;#&lt;/a&gt; VIPER 的主要部分&lt;/h2&gt;
+&lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;View: (视图）： 显示 Presenter 告知的内容，并将用户输入中继回 Presenter。&lt;/li&gt;
 &lt;li&gt;Interactor: (交互器）：包含用例指定的业务逻辑。&lt;/li&gt;
-&lt;li&gt;Presenter: (表示层，也可称主持人）：包含用于准备显示内容（如从Interactor接收的）和用于对用户输入做出反应（通过从Interactor请求新数据）的视图逻辑。&lt;/li&gt;
-&lt;li&gt;Entity: (实体）：包含Interactor使用的基本模型对象。&lt;/li&gt;
+&lt;li&gt;Presenter: (表示层，也可称主持人）：包含用于准备显示内容（如从 Interactor 接收的）和用于对用户输入做出反应（通过从 Interactor 请求新数据）的视图逻辑。&lt;/li&gt;
+&lt;li&gt;Entity: (实体）：包含 Interactor 使用的基本模型对象。&lt;/li&gt;
 &lt;li&gt;Routing: (路由）：包含用于描述按哪个顺序显示哪些屏幕的导航逻辑。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这种分离也符合&lt;a href=&#34;http://www.objectmentor.com/resources/articles/srp.pdf&#34;&gt;单一责任原则&lt;/a&gt;。&lt;br&gt;Interactor负责业务分析师&lt;br&gt;Presenter代表交互设计师&lt;br&gt;View负责视觉设计师&lt;/p&gt;
+&lt;p&gt;这种分离也符合&lt;a href=&#34;http://www.objectmentor.com/resources/articles/srp.pdf&#34;&gt;单一责任原则&lt;/a&gt;。&lt;br&gt;
+Interactor 负责业务分析师&lt;br&gt;
+ Presenter 代表交互设计师&lt;br&gt;
+ View 负责视觉设计师&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;相比MVX&#34;&gt;&lt;a href=&#34;#相比MVX&#34; class=&#34;headerlink&#34; title=&#34;相比MVX&#34;&gt;&lt;/a&gt;相比MVX&lt;/h3&gt;&lt;p&gt;相比之前的MVX架构，VIPER多出了两个东西：Interactor（交互器）和Router（路由）。&lt;/p&gt;
+&lt;h3 id=&#34;相比mvx&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#相比mvx&#34;&gt;#&lt;/a&gt; 相比 MVX&lt;/h3&gt;
+&lt;p&gt;相比之前的 MVX 架构，VIPER 多出了两个东西：Interactor（交互器）和 Router（路由）。&lt;/p&gt;
 &lt;p&gt;各部分职责如下：&lt;/p&gt;
 &lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;- View&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;提供完整的视图，负责视图的组合、布局、更新&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向Presenter提供更新视图的接口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;将View相关的事件发送给Presenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Presenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;接收并处理来自View的事件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向Interactor请求调用业务逻辑&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;向Interactor提供View中的数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;接收并处理来自Interactor的数据回调事件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;通知View进行更新操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;通过Router跳转到其他View&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Router&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;提供View之间的跳转功能，减少了模块间的耦合&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;初始化VIPER的各个模块&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Interactor&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;维护主要的业务逻辑功能，向Presenter提供现有的业务用例&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;维护、获取、更新Entity&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;当有业务相关的事件发生时，处理事件，并通知Presenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Entity&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;和Model一样的数据模型&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;Viper模版代码生成工具&#34;&gt;&lt;a href=&#34;#Viper模版代码生成工具&#34; class=&#34;headerlink&#34; title=&#34;Viper模版代码生成工具&#34;&gt;&lt;/a&gt;Viper模版代码生成工具&lt;/h1&gt;&lt;h2 id=&#34;推荐两个模版&#34;&gt;&lt;a href=&#34;#推荐两个模版&#34; class=&#34;headerlink&#34; title=&#34;推荐两个模版&#34;&gt;&lt;/a&gt;推荐两个模版&lt;/h2&gt;&lt;h3 id=&#34;Viperit&#34;&gt;&lt;a href=&#34;#Viperit&#34; class=&#34;headerlink&#34; title=&#34;Viperit&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://github.com/ferranabello/Viperit&#34;&gt;Viperit&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;支持Swift、SwiftUI&lt;/li&gt;
-&lt;li&gt;可创建viper架构模版&lt;/li&gt;
+&lt;h1 id=&#34;viper模版代码生成工具&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#viper模版代码生成工具&#34;&gt;#&lt;/a&gt; Viper 模版代码生成工具&lt;/h1&gt;
+&lt;h2 id=&#34;推荐两个模版&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#推荐两个模版&#34;&gt;#&lt;/a&gt; 推荐两个模版&lt;/h2&gt;
+&lt;h3 id=&#34;viperit&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#viperit&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://github.com/ferranabello/Viperit&#34;&gt;Viperit&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;支持 Swift、SwiftUI&lt;/li&gt;
+&lt;li&gt;可创建 viper 架构模版&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;Generamba&#34;&gt;&lt;a href=&#34;#Generamba&#34; class=&#34;headerlink&#34; title=&#34;Generamba&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://github.com/strongself/Generamba&#34;&gt;Generamba&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;支持OC和Swift&lt;/li&gt;
-&lt;li&gt;可以创建mvvm、viper模版&lt;/li&gt;
+&lt;h3 id=&#34;generamba&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generamba&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://github.com/strongself/Generamba&#34;&gt;Generamba&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;支持 OC 和 Swift&lt;/li&gt;
+&lt;li&gt;可以创建 mvvm、viper 模版&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;了解模版语言Liquid&#34;&gt;&lt;a href=&#34;#了解模版语言Liquid&#34; class=&#34;headerlink&#34; title=&#34;了解模版语言Liquid&#34;&gt;&lt;/a&gt;了解模版语言Liquid&lt;/h2&gt;&lt;p&gt;github源码：**&lt;a href=&#34;https://github.com/Shopify/liquid&#34;&gt;liquid&lt;/a&gt;**&lt;br&gt;&lt;a href=&#34;https://www.baidu.com/link?url=fK4IqIz8Jd_NwiiLfMbodfFYy5521QApXPJBhxB5yD_ACOge0kdPzMlm5_3B_tT9&amp;wd=&amp;eqid=df8a26640004378f000000045a6a8ac1&#34;&gt;&lt;em&gt;Liquid&lt;/em&gt; 模板语言中文文档&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;了解模版语言liquid&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#了解模版语言liquid&#34;&gt;#&lt;/a&gt; 了解模版语言 Liquid&lt;/h2&gt;
+&lt;p&gt;github 源码：&lt;strong&gt;&lt;a href=&#34;https://github.com/Shopify/liquid&#34;&gt;liquid&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.baidu.com/link?url=fK4IqIz8Jd_NwiiLfMbodfFYy5521QApXPJBhxB5yD_ACOge0kdPzMlm5_3B_tT9&amp;amp;wd=&amp;amp;eqid=df8a26640004378f000000045a6a8ac1&#34;&gt;&lt;em&gt;Liquid&lt;/em&gt; 模板语言中文文档&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Liquid 是一门开源的模板语言，由 &lt;a href=&#34;https://www.shopify.com/&#34;&gt;Shopify&lt;/a&gt; 创造并用 Ruby 实现。它是 Shopify 主题的骨骼，并且被用于加载店铺系统的动态内容。&lt;br&gt;&lt;br&gt;从 2006 年起，Liquid 就被 Shopify 所使用，现在更是被大量 web 应用所使用&lt;/p&gt;
+&lt;p&gt;Liquid 是一门开源的模板语言，由 &lt;a href=&#34;https://www.shopify.com/&#34;&gt;Shopify&lt;/a&gt; 创造并用 Ruby 实现。它是 Shopify 主题的骨骼，并且被用于加载店铺系统的动态内容。&lt;br&gt;&lt;br&gt;
+从 2006 年起，Liquid 就被 Shopify 所使用，现在更是被大量 web 应用所使用&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;Viper架构实践&#34;&gt;&lt;a href=&#34;#Viper架构实践&#34; class=&#34;headerlink&#34; title=&#34;Viper架构实践&#34;&gt;&lt;/a&gt;Viper架构实践&lt;/h1&gt;&lt;p&gt;基于Viperit写了一个简单的新闻的demo&lt;br&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/FanChason/XCViperitDemo&#34;&gt;XCViperitDemo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;参考：&#34;&gt;&lt;a href=&#34;#参考：&#34; class=&#34;headerlink&#34; title=&#34;参考：&#34;&gt;&lt;/a&gt;参考：&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;viper原作者 By &lt;a href=&#34;mailto:jeff.gilbert@mutualmobile.com&#34;&gt;Jeff Gilbert&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/conradstoll&#34;&gt;Conrad Stoll&lt;/a&gt; 著&lt;br&gt;&lt;a href=&#34;https://www.objc.io/issues/13-architecture/viper/&#34;&gt;Architecting iOS Apps with VIPER&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://juejin.im/post/599a43035188252432172045&#34;&gt;iOS VIPER架构实践(二)：VIPER详解与实现&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/340b39c6d256&#34;&gt;iOS架构模式-VIPER&lt;/a&gt;&lt;/li&gt;
+&lt;h1 id=&#34;viper架构实践&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#viper架构实践&#34;&gt;#&lt;/a&gt; Viper 架构实践&lt;/h1&gt;
+&lt;p&gt;基于 Viperit 写了一个简单的新闻的 demo&lt;br&gt;
+&lt;strong&gt;&lt;a href=&#34;https://github.com/FanChason/XCViperitDemo&#34;&gt;XCViperitDemo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;参考&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考：&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;viper 原作者 By &lt;a href=&#34;mailto:jeff.gilbert@mutualmobile.com&#34;&gt;Jeff Gilbert&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/conradstoll&#34;&gt;Conrad Stoll&lt;/a&gt; 著&lt;br&gt;
+&lt;a href=&#34;https://www.objc.io/issues/13-architecture/viper/&#34;&gt; Architecting iOS Apps with VIPER&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juejin.im/post/599a43035188252432172045&#34;&gt;iOS VIPER 架构实践 (二)：VIPER 详解与实现&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/340b39c6d256&#34;&gt;iOS 架构模式 - VIPER&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
  ]]></description>
         </item>
